@@ -1,0 +1,28 @@
+[2025-11-04 13:24:29] INFO: Iniciando consulta de empleos...
+[2025-11-04 13:24:29] ERROR: Error al consultar empleos: jobs is not defined
+[2025-11-04 13:29:11] INFO: Iniciando consulta de empleos...
+[2025-11-04 13:29:12] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 13:40:15] INFO: Iniciando consulta de empleos...
+[2025-11-04 13:40:18] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 13:41:43] INFO: Iniciando consulta de empleos...
+[2025-11-04 13:41:45] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 13:48:21] INFO: Iniciando consulta de empleos...
+[2025-11-04 13:48:22] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 14:24:23] INFO: Iniciando consulta de empleos...
+[2025-11-04 14:24:26] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 14:26:40] INFO: Iniciando consulta de empleos...
+[2025-11-04 14:26:44] INFO: Consulta exitosa. Se encontraron 0 empleos.
+[2025-11-04 14:52:24] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:53:02] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:12] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:17] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:23] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:28] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:33] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:35] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:38] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:40] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:42] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:45] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:48] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 14:54:56] INFO: ✅ Backend corriendo en http://localhost:3001
