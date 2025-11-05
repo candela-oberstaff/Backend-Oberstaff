@@ -26,3 +26,133 @@
 [2025-11-04 14:54:45] INFO: ✅ Backend corriendo en http://localhost:3001
 [2025-11-04 14:54:48] INFO: ✅ Backend corriendo en http://localhost:3001
 [2025-11-04 14:54:56] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-04 15:00:00] INFO: ⏰ Ejecutando cron de verificación de vacantes...
+[2025-11-04 15:00:00] INFO: 🔍 Consultando API de Intelliscreen...
+[2025-11-04 15:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-04 17:18:44] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 10:02:21] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 10:03:18] INFO: 🔍 Iniciando verificación de nuevas vacantes...
+[2025-11-05 10:03:21] INFO: No hay vacantes nuevas. No se envía nada.
+[2025-11-05 10:11:34] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 11:22:01] INFO: 🔍 Iniciando verificación de nuevas vacantes...
+[2025-11-05 11:22:04] INFO: No hay vacantes nuevas. No se envía nada.
+[2025-11-05 11:27:48] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 11:28:07] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 11:39:15] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 11:39:31] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:00:00] INFO: ⏰ Ejecutando cron de verificación de vacantes...
+[2025-11-05 12:00:00] INFO: 🔍 Consultando API de Intelliscreen...
+[2025-11-05 12:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-05 12:32:14] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:33:28] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:36:03] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:36:05] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:36:55] INFO: 🔍 Iniciando verificación de nuevas vacantes...
+[2025-11-05 12:36:58] INFO: No hay vacantes nuevas. No se envía nada.
+[2025-11-05 12:39:39] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:39:46] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:39:57] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:41:50] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:41:51] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:41:51] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:41:51] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:43:07] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:43:08] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:43:08] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:43:08] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:15] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:50:16] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:17] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:17] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:49] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:50:50] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:50] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:50:50] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:51:06] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:51:07] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:51:09] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:51:37] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:51:38] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:51:38] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:51:39] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:53:39] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:53:41] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:54:03] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:55:00] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:55:45] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:55:48] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:56:02] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:56:24] INFO: 📤 Enviando 3 vacantes del cache por WhatsApp...
+[2025-11-05 12:56:25] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:56:25] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:56:26] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 12:57:03] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 12:57:05] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:00:00] INFO: ⏰ Ejecutando cron de verificación de vacantes...
+[2025-11-05 13:00:00] INFO: 🔍 Consultando API de Intelliscreen...
+[2025-11-05 13:00:03] ERROR: ❌ Error al consultar Intelliscreen: x is not defined
+[2025-11-05 13:00:16] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:00:50] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:01:13] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:01:17] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:01:27] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:02:38] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:03:38] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:03:39] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:03:39] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:03:39] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:05:00] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:05:00] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:05:01] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:05:01] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:10:05] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:10:05] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:10:06] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:10:06] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:12:55] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:12:58] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:13:04] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:13:16] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:13:17] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:13:17] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:13:17] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:14:11] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:27] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:29] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:32] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:38] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:43] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:46] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:47] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:49] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:55] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:14:57] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:15:05] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:15:11] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:15:23] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:15:24] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:15:24] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:15:25] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:16:49] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:16:54] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:16:57] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:16:58] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:16:58] ERROR: ❌ Error enviando por WhatsApp: Request failed with status code 401
+[2025-11-05 13:17:29] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:17:32] INFO: 📤 Enviando 3 vacantes almacenadas por WhatsApp...
+[2025-11-05 13:17:33] INFO: 📲 WhatsApp enviado: Frontend Developer (React)
+[2025-11-05 13:17:33] INFO: 📲 WhatsApp enviado: Backend Developer (Node.js)
+[2025-11-05 13:17:34] INFO: 📲 WhatsApp enviado: QA Automation Engineer
+[2025-11-05 13:21:30] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:21:37] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:39:09] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:39:32] INFO: 📤 Enviando undefined vacantes almacenadas por WhatsApp...
+[2025-11-05 13:40:27] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:40:31] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:40:51] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:11] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:13] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:16] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:19] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:26] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-05 13:41:29] INFO: ✅ Backend corriendo en http://localhost:3001

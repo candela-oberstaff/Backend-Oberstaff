@@ -1,5 +1,8 @@
 import fs from "fs";
 
+import { sendJobsToWhatsApp } from "./notifiers.js";
+import logger from "../logger.js";
+
 const CACHE_FILE = "./jobsCache.json";
 
 let jobsCache = [];
@@ -18,4 +21,16 @@ export const setJobsCache = (newJobs) => {
 export const addJobsToCache = (newJobs) => {
   jobsCache.push(...newJobs);
   setJobsCache(jobsCache);
+};
+
+export const sendNewJobsWhatsApp = async () => {
+  const jobs = getJobsCache();
+
+  if (jobs.length === 0) {
+    logger.info("📭 No hay vacantes en cache para enviar.");
+    return;
+  }
+
+  logger.info(`📤 Enviando ${jobs.length} vacantes del cache por WhatsApp...`);
+  await sendJobsToWhatsApp(jobs);
 };

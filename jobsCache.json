@@ -1,32 +1,154 @@
-[
-  {
-    "id": "job_001",
-    "job_title": "Frontend Developer (React)",
-    "location": "Remoto",
-    "type": "Full-time",
-    "status": "active",
-    "invitation_link": "https://intelliscreen.example/jobs/job_001",
-    "created_at": "2025-11-01T10:00:00Z",
-    "tests": [{ "name": "JavaScript test" }]
-  },
-  {
-    "id": "job_002",
-    "job_title": "Backend Developer (Node.js)",
-    "location": "Mendoza, Argentina",
-    "type": "Full-time",
-    "status": "active",
-    "invitation_link": "https://intelliscreen.example/jobs/job_002",
-    "created_at": "2025-10-30T09:30:00Z",
-    "tests": []
-  },
-  {
-    "id": "job_003",
-    "job_title": "QA Automation Engineer",
-    "location": "Remoto (América Latina)",
-    "type": "Part-time",
-    "status": "active",
-    "invitation_link": "https://intelliscreen.example/jobs/job_003",
-    "created_at": "2025-10-28T14:45:00Z",
-    "tests": [{ "name": "Selenium test" }]
-  }
-]
+{
+  "positions": [
+    {
+      "id": "fake-analista-datos",
+      "type": "Assessment",
+      "name": "Analista de Datos Junior",
+      "job_title": "Analista de Datos Junior",
+      "status": "Active",
+      "created_at": "2025-11-05T09:00:00.000000",
+      "total_candidates": 12,
+      "tests": [
+        {"id": "test-disc-001","name": "Test de personalidad DISC"},
+        {"id": "test-excel-001","name": "Prueba de Excel Avanzado"},
+        {"id": "test-logica-001","name": "Evaluación de Lógica y Razonamiento"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-analista-datos"
+    },
+    {
+      "id": "fake-community",
+      "type": "Assessment",
+      "name": "Community Manager Freelance",
+      "job_title": "Community Manager Freelance",
+      "status": "Active",
+      "created_at": "2025-11-03T10:00:00.000000",
+      "total_candidates": 8,
+      "tests": [
+        {"id": "test-disc-002","name": "Test de personalidad DISC"},
+        {"id": "test-campanas-001","name": "Evaluación de Campañas Digitales"},
+        {"id": "test-redaccion-001","name": "Prueba de Redacción Creativa"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-community"
+    },
+    {
+      "id": "fake-frontend",
+      "type": "Assessment",
+      "name": "Desarrollador Front-End React",
+      "job_title": "Desarrollador Front-End React",
+      "status": "Active",
+      "created_at": "2025-11-01T11:00:00.000000",
+      "total_candidates": 15,
+      "tests": [
+        {"id": "test-disc-003","name": "Test de personalidad DISC"},
+        {"id": "test-js-react-001","name": "Prueba de JavaScript y React"},
+        {"id": "test-problemas-001","name": "Evaluación de Resolución de Problemas"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-frontend"
+    },
+    {
+      "id": "fake-ventas",
+      "type": "Assessment",
+      "name": "Ejecutivo de Ventas B2B",
+      "job_title": "Ejecutivo de Ventas B2B",
+      "status": "Active",
+      "created_at": "2025-11-02T12:00:00.000000",
+      "total_candidates": 20,
+      "tests": [
+        {"id": "test-disc-004","name": "Test de personalidad DISC"},
+        {"id": "test-ventas-001","name": "Aptitud para Ventas"},
+        {"id": "test-negociacion-001","name": "Prueba de Negociación y Persuasión"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-ventas"
+    },
+    {
+      "id": "fake-backend",
+      "type": "Assessment",
+      "name": "Desarrollador Back-End Node.js",
+      "job_title": "Desarrollador Back-End Node.js",
+      "status": "Active",
+      "created_at": "2025-11-04T08:30:00.000000",
+      "total_candidates": 10,
+      "tests": [
+        {"id": "test-disc-005","name": "Test de personalidad DISC"},
+        {"id": "test-node-001","name": "Prueba de Node.js y APIs"},
+        {"id": "test-db-001","name": "Evaluación de Base de Datos"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-backend"
+    },
+    {
+      "id": "fake-marketing",
+      "type": "Assessment",
+      "name": "Especialista en Marketing Digital",
+      "job_title": "Especialista en Marketing Digital",
+      "status": "Active",
+      "created_at": "2025-11-02T14:00:00.000000",
+      "total_candidates": 18,
+      "tests": [
+        {"id": "test-disc-006","name": "Test de personalidad DISC"},
+        {"id": "test-campanas-002","name": "Evaluación de Campañas Digitales Avanzadas"},
+        {"id": "test-redaccion-002","name": "Prueba de Copywriting"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-marketing"
+    },
+    {
+      "id": "fake-diseño",
+      "type": "Assessment",
+      "name": "Diseñador UX/UI",
+      "job_title": "Diseñador UX/UI",
+      "status": "Active",
+      "created_at": "2025-11-03T16:15:00.000000",
+      "total_candidates": 7,
+      "tests": [
+        {"id": "test-disc-007","name": "Test de personalidad DISC"},
+        {"id": "test-uxui-001","name": "Prueba de Diseño UX/UI"},
+        {"id": "test-creatividad-001","name": "Evaluación de Creatividad"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-diseño"
+    },
+    {
+      "id": "fake-finanzas",
+      "type": "Assessment",
+      "name": "Analista Financiero Senior",
+      "job_title": "Analista Financiero Senior",
+      "status": "Active",
+      "created_at": "2025-11-01T09:45:00.000000",
+      "total_candidates": 11,
+      "tests": [
+        {"id": "test-disc-008","name": "Test de personalidad DISC"},
+        {"id": "test-finanzas-001","name": "Prueba de Análisis Financiero"},
+        {"id": "test-logica-002","name": "Evaluación de Razonamiento Lógico"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-finanzas"
+    },
+    {
+      "id": "fake-recursos",
+      "type": "Assessment",
+      "name": "Coordinador de Recursos Humanos",
+      "job_title": "Coordinador de Recursos Humanos",
+      "status": "Active",
+      "created_at": "2025-11-04T11:30:00.000000",
+      "total_candidates": 9,
+      "tests": [
+        {"id": "test-disc-009","name": "Test de personalidad DISC"},
+        {"id": "test-rrhh-001","name": "Prueba de Gestión de Talento"},
+        {"id": "test-comunicacion-001","name": "Evaluación de Comunicación"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-recursos"
+    },
+    {
+      "id": "fake-soporte",
+      "type": "Assessment",
+      "name": "Soporte Técnico IT",
+      "job_title": "Soporte Técnico IT",
+      "status": "Active",
+      "created_at": "2025-11-05T13:00:00.000000",
+      "total_candidates": 14,
+      "tests": [
+        {"id": "test-disc-010","name": "Test de personalidad DISC"},
+        {"id": "test-it-001","name": "Prueba de Soporte Técnico"},
+        {"id": "test-problemas-002","name": "Evaluación de Resolución de Problemas IT"}
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/fake-soporte"
+    }
+  ]
+}
