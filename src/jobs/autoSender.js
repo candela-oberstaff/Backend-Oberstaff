@@ -1,29 +1,35 @@
+import axios from "axios";
 import logger from "../../logger.js";
 import { fetchActiveJobs } from "./fetcher.js";
+import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 export const sendNewJobsFlow = async () => {
   try {
     logger.info("🔍 Iniciando verificación de vacantes nuevas...");
 
-    const activeJobs = await fetchActiveJobs(); 
-    const dbJobs = await Job.find({ status: "active" });
-
-    
-    const newJobs = activeJobs.filter(
-      (job) => !dbJobs.find((dbJob) => dbJob.id === job.id)
-    );
+    const newJobs = await fetchActiveJobs();
 
     if (newJobs.length === 0) {
       logger.info("📭 No se detectaron vacantes nuevas.");
       return;
     }
 
-    await Job.insertMany(newJobs);
-
     await sendJobsToWhatsApp(newJobs);
     await sendJobsToTelegram(newJobs);
 
-    logger.info(`🚀 Se enviaron ${newJobs.length} vacantes nuevas a los canales.`);
+    const WORKFLOW_WEBHOOK = process.env.WORKFLOW_WEBHOOK_URL;
+    if (WORKFLOW_WEBHOOK) {
+      try {
+        await axios.post(WORKFLOW_WEBHOOK, { jobs: newJobs });
+        logger.info(`🌐 Workflow notificado con ${newJobs.length} vacantes.`);
+      } catch (err) {
+        logger.error(`❌ Error enviando al workflow: ${err.message}`);
+      }
+    }
+
+    logger.info(`✅ Flujo completado: ${newJobs.length} vacantes nuevas enviadas.`);
   } catch (err) {
     logger.error(`❌ Error en sendNewJobsFlow: ${err.message}`);
   }
