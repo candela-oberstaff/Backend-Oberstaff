@@ -1,154 +1,862 @@
 {
   "positions": [
     {
-      "id": "fake-analista-datos",
+      "id": "f9b3daea-3c43-4733-9c4b-7b5575c3767b",
       "type": "Assessment",
-      "name": "Analista de Datos Junior",
-      "job_title": "Analista de Datos Junior",
+      "name": "Data Entry",
+      "job_title": "Data Entry",
       "status": "Active",
-      "created_at": "2025-11-05T09:00:00.000000",
-      "total_candidates": 12,
+      "created_at": "2025-11-05T00:16:19.313299",
+      "total_candidates": 26,
       "tests": [
-        {"id": "test-disc-001","name": "Test de personalidad DISC"},
-        {"id": "test-excel-001","name": "Prueba de Excel Avanzado"},
-        {"id": "test-logica-001","name": "Evaluación de Lógica y Razonamiento"}
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "a7562c11-64be-4b02-beaa-9b378ba6ab07",
+          "name": "Prueba para Gestión de Data Entry"
+        },
+        {
+          "id": "60c1c009-2b4f-4620-b1ba-65baee1ccad0",
+          "name": "Microsoft Excel (General)"
+        }
       ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-analista-datos"
+      "invitation_link": "https://app.intelliscreen.io/invite/f9b3daea-3c43-4733-9c4b-7b5575c3767b"
     },
     {
-      "id": "fake-community",
+      "id": "19ab7717-acae-43ea-a10c-65360db8fa82",
       "type": "Assessment",
-      "name": "Community Manager Freelance",
-      "job_title": "Community Manager Freelance",
+      "name": "Marketing Manager",
+      "job_title": "Marketing Manager",
       "status": "Active",
-      "created_at": "2025-11-03T10:00:00.000000",
-      "total_candidates": 8,
-      "tests": [
-        {"id": "test-disc-002","name": "Test de personalidad DISC"},
-        {"id": "test-campanas-001","name": "Evaluación de Campañas Digitales"},
-        {"id": "test-redaccion-001","name": "Prueba de Redacción Creativa"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-community"
-    },
-    {
-      "id": "fake-frontend",
-      "type": "Assessment",
-      "name": "Desarrollador Front-End React",
-      "job_title": "Desarrollador Front-End React",
-      "status": "Active",
-      "created_at": "2025-11-01T11:00:00.000000",
-      "total_candidates": 15,
-      "tests": [
-        {"id": "test-disc-003","name": "Test de personalidad DISC"},
-        {"id": "test-js-react-001","name": "Prueba de JavaScript y React"},
-        {"id": "test-problemas-001","name": "Evaluación de Resolución de Problemas"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-frontend"
-    },
-    {
-      "id": "fake-ventas",
-      "type": "Assessment",
-      "name": "Ejecutivo de Ventas B2B",
-      "job_title": "Ejecutivo de Ventas B2B",
-      "status": "Active",
-      "created_at": "2025-11-02T12:00:00.000000",
-      "total_candidates": 20,
-      "tests": [
-        {"id": "test-disc-004","name": "Test de personalidad DISC"},
-        {"id": "test-ventas-001","name": "Aptitud para Ventas"},
-        {"id": "test-negociacion-001","name": "Prueba de Negociación y Persuasión"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-ventas"
-    },
-    {
-      "id": "fake-backend",
-      "type": "Assessment",
-      "name": "Desarrollador Back-End Node.js",
-      "job_title": "Desarrollador Back-End Node.js",
-      "status": "Active",
-      "created_at": "2025-11-04T08:30:00.000000",
-      "total_candidates": 10,
-      "tests": [
-        {"id": "test-disc-005","name": "Test de personalidad DISC"},
-        {"id": "test-node-001","name": "Prueba de Node.js y APIs"},
-        {"id": "test-db-001","name": "Evaluación de Base de Datos"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-backend"
-    },
-    {
-      "id": "fake-marketing",
-      "type": "Assessment",
-      "name": "Especialista en Marketing Digital",
-      "job_title": "Especialista en Marketing Digital",
-      "status": "Active",
-      "created_at": "2025-11-02T14:00:00.000000",
-      "total_candidates": 18,
-      "tests": [
-        {"id": "test-disc-006","name": "Test de personalidad DISC"},
-        {"id": "test-campanas-002","name": "Evaluación de Campañas Digitales Avanzadas"},
-        {"id": "test-redaccion-002","name": "Prueba de Copywriting"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-marketing"
-    },
-    {
-      "id": "fake-diseño",
-      "type": "Assessment",
-      "name": "Diseñador UX/UI",
-      "job_title": "Diseñador UX/UI",
-      "status": "Active",
-      "created_at": "2025-11-03T16:15:00.000000",
-      "total_candidates": 7,
-      "tests": [
-        {"id": "test-disc-007","name": "Test de personalidad DISC"},
-        {"id": "test-uxui-001","name": "Prueba de Diseño UX/UI"},
-        {"id": "test-creatividad-001","name": "Evaluación de Creatividad"}
-      ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-diseño"
-    },
-    {
-      "id": "fake-finanzas",
-      "type": "Assessment",
-      "name": "Analista Financiero Senior",
-      "job_title": "Analista Financiero Senior",
-      "status": "Active",
-      "created_at": "2025-11-01T09:45:00.000000",
+      "created_at": "2025-11-04T13:04:52.468781",
       "total_candidates": 11,
       "tests": [
-        {"id": "test-disc-008","name": "Test de personalidad DISC"},
-        {"id": "test-finanzas-001","name": "Prueba de Análisis Financiero"},
-        {"id": "test-logica-002","name": "Evaluación de Razonamiento Lógico"}
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "83b8434e-bfde-4711-97ce-e4d92cba3c2b",
+          "name": "Especialista en Marketing Digital - Evaluación Integral"
+        },
+        {
+          "id": "712c923e-1ec3-40f4-a13d-493db88b294d",
+          "name": "Prueba de Habilidades para Supervisor o Líder de Equipo"
+        },
+        {
+          "id": "3b08c3b7-353b-4261-bf10-6d59a0886a90",
+          "name": "Prueba de Honestidad e Integridad"
+        }
       ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-finanzas"
+      "invitation_link": "https://app.intelliscreen.io/invite/19ab7717-acae-43ea-a10c-65360db8fa82"
     },
     {
-      "id": "fake-recursos",
+      "id": "efd6722f-f6d3-41b8-ba5e-9704e9a89984",
       "type": "Assessment",
-      "name": "Coordinador de Recursos Humanos",
-      "job_title": "Coordinador de Recursos Humanos",
+      "name": "Team Leader Bilingüe",
+      "job_title": "Team Leader Bilingüe",
       "status": "Active",
-      "created_at": "2025-11-04T11:30:00.000000",
+      "created_at": "2025-10-31T10:13:31.539102",
+      "total_candidates": 16,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "585178d3-ad73-4a5d-8e58-366a1bba1268",
+          "name": "Prueba de Inglés Conversacional y Escritura - Nivel C1"
+        },
+        {
+          "id": "664fce9b-fbd4-4779-9eec-96f7692cfb77",
+          "name": "Prueba de Atención al Público Vía Telefónica y Canales Digitales"
+        },
+        {
+          "id": "712c923e-1ec3-40f4-a13d-493db88b294d",
+          "name": "Prueba de Habilidades para Supervisor o Líder de Equipo"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/efd6722f-f6d3-41b8-ba5e-9704e9a89984"
+    },
+    {
+      "id": "6f01da71-ffff-4a86-be2f-b983ec6a7592",
+      "type": "Assessment",
+      "name": "Teleoperador Bilingüe",
+      "job_title": "Teleoperador Bilingüe",
+      "status": "Active",
+      "created_at": "2025-10-31T10:03:14.491965",
+      "total_candidates": 21,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "585178d3-ad73-4a5d-8e58-366a1bba1268",
+          "name": "Prueba de Inglés Conversacional y Escritura - Nivel C1"
+        },
+        {
+          "id": "664fce9b-fbd4-4779-9eec-96f7692cfb77",
+          "name": "Prueba de Atención al Público Vía Telefónica y Canales Digitales"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/6f01da71-ffff-4a86-be2f-b983ec6a7592"
+    },
+    {
+      "id": "bebbe2c2-c17b-4847-a3e6-df3753555225",
+      "type": "Assessment",
+      "name": "Prospector de Citas",
+      "job_title": "Prospector de Citas",
+      "status": "Active",
+      "created_at": "2025-10-29T16:18:08.584770",
+      "total_candidates": 175,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "873b5134-43f0-4624-8855-a1f6da3b6be2",
+          "name": "Aptitud para Ventas"
+        },
+        {
+          "id": "d93693da-b278-4262-a814-f3f4b5cf11fb",
+          "name": "Inventario de Personalidad para Vendedores"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/bebbe2c2-c17b-4847-a3e6-df3753555225"
+    },
+    {
+      "id": "f85c6120-5d36-4991-a789-30b0ccc5f17f",
+      "type": "Assessment",
+      "name": "Desarrollor No-Code / Low-Code",
+      "job_title": "Desarrollo No-Code / Low-Code",
+      "status": "Active",
+      "created_at": "2025-10-28T19:06:34.249071",
+      "total_candidates": 130,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "33da4dac-68a4-4449-97b6-025b5c588c4b",
+          "name": "Prueba Desarrollador N8N, Webflow y Bubble.io"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/f85c6120-5d36-4991-a789-30b0ccc5f17f"
+    },
+    {
+      "id": "a6865cba-728f-4f50-a958-a1c155238883",
+      "type": "Assessment",
+      "name": "Auxiliar Administrativo - Contable",
+      "job_title": "Auxiliar Administrativo - Contable",
+      "status": "Active",
+      "created_at": "2025-10-28T18:55:57.462330",
+      "total_candidates": 362,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "0ff1c866-2459-43e6-a949-28e7e828914f",
+          "name": "Prueba de Competencias para Auxiliar Administrativo"
+        },
+        {
+          "id": "96a5ac47-9492-4f12-a870-933833bd0f0f",
+          "name": "Gestión del Desempeño"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/a6865cba-728f-4f50-a958-a1c155238883"
+    },
+    {
+      "id": "e46b5191-0d57-40ea-8d2d-bfe223714dde",
+      "type": "Assessment",
+      "name": "Ejecutivo de Ventas ",
+      "job_title": "Ejecutivo de Ventas",
+      "status": "Active",
+      "created_at": "2025-10-28T13:29:54.728526",
+      "total_candidates": 414,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "873b5134-43f0-4624-8855-a1f6da3b6be2",
+          "name": "Aptitud para Ventas"
+        },
+        {
+          "id": "d93693da-b278-4262-a814-f3f4b5cf11fb",
+          "name": "Inventario de Personalidad para Vendedores"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/e46b5191-0d57-40ea-8d2d-bfe223714dde"
+    },
+    {
+      "id": "6644d866-afec-4b38-9a99-27fb21114f06",
+      "type": "Assessment",
+      "name": "Especialista en soporte de Teowin",
+      "job_title": "Especialista en soporte de Teowin",
+      "status": "Active",
+      "created_at": "2025-10-27T19:58:42.645726",
       "total_candidates": 9,
       "tests": [
-        {"id": "test-disc-009","name": "Test de personalidad DISC"},
-        {"id": "test-rrhh-001","name": "Prueba de Gestión de Talento"},
-        {"id": "test-comunicacion-001","name": "Evaluación de Comunicación"}
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "6ee48b23-391b-4c94-a24c-1509d473cd31",
+          "name": "Evaluación Avanzada de Teowin: Integración CNC y Capacitación"
+        },
+        {
+          "id": "8fff2f81-c485-4b5b-8849-ca6ff1f53fca",
+          "name": "Evaluación de Comunicación Efectiva y Didáctica"
+        }
       ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-recursos"
+      "invitation_link": "https://app.intelliscreen.io/invite/6644d866-afec-4b38-9a99-27fb21114f06"
     },
     {
-      "id": "fake-soporte",
+      "id": "d830ffa6-af49-4493-86c8-eaa47ca9c225",
       "type": "Assessment",
-      "name": "Soporte Técnico IT",
-      "job_title": "Soporte Técnico IT",
+      "name": "Analista de Reclutamiento y Selección",
+      "job_title": "Analista de Reclutamiento y Selección",
       "status": "Active",
-      "created_at": "2025-11-05T13:00:00.000000",
-      "total_candidates": 14,
+      "created_at": "2025-10-27T18:26:30.738498",
+      "total_candidates": 539,
       "tests": [
-        {"id": "test-disc-010","name": "Test de personalidad DISC"},
-        {"id": "test-it-001","name": "Prueba de Soporte Técnico"},
-        {"id": "test-problemas-002","name": "Evaluación de Resolución de Problemas IT"}
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "bdc75dba-f15c-4e6f-9723-b4ceb33bd0d6",
+          "name": "Evaluación de Reclutamiento y Liderazgo de Equipos Remotos"
+        },
+        {
+          "id": "3b08c3b7-353b-4261-bf10-6d59a0886a90",
+          "name": "Prueba de Honestidad e Integridad"
+        }
       ],
-      "invitation_link": "https://app.intelliscreen.io/invite/fake-soporte"
+      "invitation_link": "https://app.intelliscreen.io/invite/d830ffa6-af49-4493-86c8-eaa47ca9c225"
+    },
+    {
+      "id": "80267850-649c-4b7c-856b-2f2267f4983e",
+      "type": "Assessment",
+      "name": "Community Manager",
+      "job_title": "Community Manager",
+      "status": "Active",
+      "created_at": "2025-10-23T12:34:52.421411",
+      "total_candidates": 798,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "14a37182-d73e-43de-824d-5732a58a3b71",
+          "name": "Evaluación Avanzada de Campañas Publicitarias"
+        },
+        {
+          "id": "83b8434e-bfde-4711-97ce-e4d92cba3c2b",
+          "name": "Especialista en Marketing Digital - Evaluación Integral"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/80267850-649c-4b7c-856b-2f2267f4983e"
+    },
+    {
+      "id": "ccb676e2-2ba7-41c4-9801-bc1bed891a0d",
+      "type": "Assessment",
+      "name": " Responsable de Media y Paid Media",
+      "job_title": " Responsable de Media y Paid Media",
+      "status": "Active",
+      "created_at": "2025-10-22T19:32:40.428018",
+      "total_candidates": 68,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "5ffddbc7-45ef-4df1-8725-8218d87225a9",
+          "name": "Inteligencia Artificial"
+        },
+        {
+          "id": "b5a7d98b-a7b5-4818-9904-259331b57015",
+          "name": "Publicidad PPC"
+        },
+        {
+          "id": "187a37ac-c7c0-4ff0-a430-3fc0d0d8baf3",
+          "name": "Prueba de Creatividad e Innovación"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/ccb676e2-2ba7-41c4-9801-bc1bed891a0d"
+    },
+    {
+      "id": "49cbf38d-82ad-4e64-8f31-8693c5399569",
+      "type": "Assessment",
+      "name": "Productor de Vídeo",
+      "job_title": "Productor de Vídeo",
+      "status": "Active",
+      "created_at": "2025-10-22T19:17:09.751868",
+      "total_candidates": 130,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "d0e1ddf5-f33b-4fcb-a353-a2d01402939a",
+          "name": "Evaluación Avanzada para Editor de Video"
+        },
+        {
+          "id": "187a37ac-c7c0-4ff0-a430-3fc0d0d8baf3",
+          "name": "Prueba de Creatividad e Innovación"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/49cbf38d-82ad-4e64-8f31-8693c5399569"
+    },
+    {
+      "id": "80bc0778-420d-4c26-b203-0c2cf89dae8e",
+      "type": "Assessment",
+      "name": "Diseñador Creativo / Diseñador Gráfico Senior",
+      "job_title": "Diseñador Creativo / Diseñador Gráfico Senior",
+      "status": "Active",
+      "created_at": "2025-10-22T18:29:57.619180",
+      "total_candidates": 227,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "8e30b0ef-3e14-47c3-b49b-c4ae0e066dd4",
+          "name": "Evaluación para Diseñador Creativo Generalista"
+        },
+        {
+          "id": "5ffddbc7-45ef-4df1-8725-8218d87225a9",
+          "name": "Inteligencia Artificial"
+        },
+        {
+          "id": "187a37ac-c7c0-4ff0-a430-3fc0d0d8baf3",
+          "name": "Prueba de Creatividad e Innovación"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/80bc0778-420d-4c26-b203-0c2cf89dae8e"
+    },
+    {
+      "id": "788751dd-29b7-4a2f-bcef-e15cd133130c",
+      "type": "Assessment",
+      "name": "Desarrollador WordPress",
+      "job_title": "Desarrollador WordPress",
+      "status": "Active",
+      "created_at": "2025-10-21T19:25:36.556281",
+      "total_candidates": 119,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "483e6468-718f-4ab0-94be-4a1750775e5e",
+          "name": "Evaluación Avanzada para Desarrollador Web WordPress"
+        },
+        {
+          "id": "a8641464-02b4-4caf-9e7e-ddf3c78f8a87",
+          "name": "Aprendizaje Automático"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/788751dd-29b7-4a2f-bcef-e15cd133130c"
+    },
+    {
+      "id": "4823217c-5132-405b-97fb-00d6f8fbb8ed",
+      "type": "Assessment",
+      "name": "Desarrollador Full Stack Junior ",
+      "job_title": "Desarrollador Full Stack Junior ",
+      "status": "Active",
+      "created_at": "2025-10-21T16:44:54.276954",
+      "total_candidates": 110,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "e86107dd-d19d-41cc-9064-33a1a750e7a0",
+          "name": "Programación en Python"
+        },
+        {
+          "id": "3769676a-df6b-438f-9f90-e1dbe22d924c",
+          "name": "Prueba para Desarrollador FullStack Junior"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/4823217c-5132-405b-97fb-00d6f8fbb8ed"
+    },
+    {
+      "id": "bc04b84e-0614-4218-8d78-8087f081d023",
+      "type": "Assessment",
+      "name": "Programador PHP",
+      "job_title": "Programador PHP",
+      "status": "Active",
+      "created_at": "2025-10-21T15:21:48.144695",
+      "total_candidates": 158,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "1e41bb35-1491-4991-b855-2fb87193f58a",
+          "name": "Prueba de PHP para Perfil Junior"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/bc04b84e-0614-4218-8d78-8087f081d023"
+    },
+    {
+      "id": "cd91249f-7edc-4687-aa93-e221d3dd5d11",
+      "type": "Assessment",
+      "name": "Asistente Virtual (Juridico)",
+      "job_title": "Asistente Virtual",
+      "status": "Active",
+      "created_at": "2025-10-21T15:12:14.649554",
+      "total_candidates": 197,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "4e854e3b-411b-4923-aee6-be630b57d382",
+          "name": "Redacción de Correo Formal a un Juzgado"
+        },
+        {
+          "id": "0e82e37d-5c6e-4302-a3d1-b53e2610b651",
+          "name": "Evaluación sobre Revisión de Documentación Legal y Envío de Burofaxes"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/cd91249f-7edc-4687-aa93-e221d3dd5d11"
+    },
+    {
+      "id": "de4ceb61-351f-4bfd-a942-13fc9ea8aebb",
+      "type": "Assessment",
+      "name": "Asistente de Atención al Cliente (Bilingüe)",
+      "job_title": "Asistente de Atención al Cliente (Bilingüe)",
+      "status": "Active",
+      "created_at": "2025-10-20T20:52:38.170924",
+      "total_candidates": 317,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "4122beb8-036a-4647-90a4-54023af53596",
+          "name": "Evaluación Avanzada de Atención al Cliente"
+        },
+        {
+          "id": "c6f0a60d-c371-410a-9a2b-d0b7512e0410",
+          "name": "Prueba de Inglés Conversacional y Escrito Avanzado"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/de4ceb61-351f-4bfd-a942-13fc9ea8aebb"
+    },
+    {
+      "id": "092a9dc0-92ce-4c79-954c-b7a3dea44a7b",
+      "type": "Assessment",
+      "name": "Delineante",
+      "job_title": "Delineante",
+      "status": "Active",
+      "created_at": "2025-10-16T20:15:59.223123",
+      "total_candidates": 29,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "fe1ce1c0-84d9-44e8-a669-ba9b3977d370",
+          "name": "Prueba de Aptitud para Delineante Junior"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/092a9dc0-92ce-4c79-954c-b7a3dea44a7b"
+    },
+    {
+      "id": "60c483cf-b9ad-4e63-99c7-3fdd89dcdcc5",
+      "type": "Assessment",
+      "name": "Asistente de WordPress",
+      "job_title": "Asistente de WordPress",
+      "status": "Active",
+      "created_at": "2025-10-16T19:28:33.441675",
+      "total_candidates": 344,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "f2b0c881-1d97-469a-afaa-b8845f5c3b19",
+          "name": "Prueba para Asistente de WordPress - Migración de Contenido"
+        },
+        {
+          "id": "5ffddbc7-45ef-4df1-8725-8218d87225a9",
+          "name": "Inteligencia Artificial"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/60c483cf-b9ad-4e63-99c7-3fdd89dcdcc5"
+    },
+    {
+      "id": "e0226993-b191-44b1-a793-21a62a5820c8",
+      "type": "Assessment",
+      "name": "Especialista en Marketing",
+      "job_title": "Especialista en Marketing",
+      "status": "Active",
+      "created_at": "2025-10-16T14:35:36.640041",
+      "total_candidates": 146,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "83b8434e-bfde-4711-97ce-e4d92cba3c2b",
+          "name": "Especialista en Marketing Digital - Evaluación Integral"
+        },
+        {
+          "id": "14a37182-d73e-43de-824d-5732a58a3b71",
+          "name": "Evaluación Avanzada de Campañas Publicitarias"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/e0226993-b191-44b1-a793-21a62a5820c8"
+    },
+    {
+      "id": "2310bf18-35d3-4a7c-a72f-ee0ba93943f7",
+      "type": "Assessment",
+      "name": "Auxiliar Administrativo - Contable",
+      "job_title": "Auxiliar Administrativo - Contable",
+      "status": "Active",
+      "created_at": "2025-10-10T17:47:56.198635",
+      "total_candidates": 960,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "633d60a5-623a-4de7-b68e-a7c6b5837514",
+          "name": "Evaluación Avanzada de Contabilidad"
+        },
+        {
+          "id": "b4526052-a1e0-4ad7-90a8-cbd4fb306ed1",
+          "name": "Gestión del Tiempo"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/2310bf18-35d3-4a7c-a72f-ee0ba93943f7"
+    },
+    {
+      "id": "8be34564-3e47-41c6-a8fe-96138443cad9",
+      "type": "Assessment",
+      "name": "Delineante",
+      "job_title": "Delineante",
+      "status": "Active",
+      "created_at": "2025-10-10T01:25:38.067867",
+      "total_candidates": 202,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "26f5f927-d100-4cd7-8f19-b0099dcc8ad9",
+          "name": "Evaluación Avanzada en Visualización, Producción y Gestión Técnica Arquitectónica"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/8be34564-3e47-41c6-a8fe-96138443cad9"
+    },
+    {
+      "id": "86b496bf-3abb-4fb5-8655-5470ffa42d91",
+      "type": "Assessment",
+      "name": "Desarrollador No-Code / Low-Code",
+      "job_title": "Desarrollador No-Code / Low-Code",
+      "status": "Active",
+      "created_at": "2025-10-08T20:14:37.849674",
+      "total_candidates": 132,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "33da4dac-68a4-4449-97b6-025b5c588c4b",
+          "name": "Prueba Desarrollador N8N, Webflow y Bubble.io"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/86b496bf-3abb-4fb5-8655-5470ffa42d91"
+    },
+    {
+      "id": "ed80cf37-4b89-4eb5-925d-e922ece9ce07",
+      "type": "Assessment",
+      "name": "Diseñador Gráfico",
+      "job_title": "Diseñador Gráfico",
+      "status": "Active",
+      "created_at": "2025-10-08T16:28:01.474893",
+      "total_candidates": 278,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "187a37ac-c7c0-4ff0-a430-3fc0d0d8baf3",
+          "name": "Prueba de Creatividad e Innovación"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/ed80cf37-4b89-4eb5-925d-e922ece9ce07"
+    },
+    {
+      "id": "b7e6be3c-d87d-49f0-acca-12c08ef9a1af",
+      "type": "Assessment",
+      "name": "Programador Informático",
+      "job_title": "Programador Informático",
+      "status": "Active",
+      "created_at": "2025-10-06T18:49:38.046204",
+      "total_candidates": 70,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/b7e6be3c-d87d-49f0-acca-12c08ef9a1af"
+    },
+    {
+      "id": "5e4c2b4f-8452-43ed-828a-c4c9a80c5e46",
+      "type": "Assessment",
+      "name": "Desarrollador Web Full Stack",
+      "job_title": "Desarrollador Web Full Stack",
+      "status": "Active",
+      "created_at": "2025-10-06T13:00:27.100022",
+      "total_candidates": 305,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/5e4c2b4f-8452-43ed-828a-c4c9a80c5e46"
+    },
+    {
+      "id": "cbd13654-d007-4df1-8f16-4b30a52ee594",
+      "type": "Assessment",
+      "name": "Especialista en Posicionamiento SEO",
+      "job_title": "Especialista en Posicionamiento SEO",
+      "status": "Active",
+      "created_at": "2025-10-02T18:48:46.759188",
+      "total_candidates": 19,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/cbd13654-d007-4df1-8f16-4b30a52ee594"
+    },
+    {
+      "id": "23ab33ef-d6d6-4619-ba17-1762a5a888ba",
+      "type": "Assessment",
+      "name": "Abogado Bilingüe",
+      "job_title": "Abogado Bilingüe",
+      "status": "Active",
+      "created_at": "2025-10-01T20:01:04.825451",
+      "total_candidates": 52,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "c6f0a60d-c371-410a-9a2b-d0b7512e0410",
+          "name": "Prueba de Inglés Conversacional y Escrito Avanzado"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/23ab33ef-d6d6-4619-ba17-1762a5a888ba"
+    },
+    {
+      "id": "a305cda9-7592-4219-a4cb-f839eec5972b",
+      "type": "Assessment",
+      "name": "Especialista Contable",
+      "job_title": "Especialista Contable",
+      "status": "Active",
+      "created_at": "2025-09-30T16:03:04.496661",
+      "total_candidates": 95,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "633d60a5-623a-4de7-b68e-a7c6b5837514",
+          "name": "Evaluación Avanzada de Contabilidad"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/a305cda9-7592-4219-a4cb-f839eec5972b"
+    },
+    {
+      "id": "6e0f6bb1-3eaa-4ef9-aa05-a5110839216d",
+      "type": "Assessment",
+      "name": "Auxiliar Docente Técnico-Digital",
+      "job_title": "Auxiliar Docente Técnico-Digital",
+      "status": "Active",
+      "created_at": "2025-09-29T22:12:18.656480",
+      "total_candidates": 385,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/6e0f6bb1-3eaa-4ef9-aa05-a5110839216d"
+    },
+    {
+      "id": "98fee98c-e44c-45e4-af4e-50bb106cb059",
+      "type": "Assessment",
+      "name": "Diseñador Gráfico",
+      "job_title": "Diseñador Gráfico",
+      "status": "Active",
+      "created_at": "2025-09-24T16:51:23.377588",
+      "total_candidates": 625,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/98fee98c-e44c-45e4-af4e-50bb106cb059"
+    },
+    {
+      "id": "e3177025-68f1-48cb-8159-c3d2caa47ad2",
+      "type": "Assessment",
+      "name": "Auxiliar Administrativo",
+      "job_title": "Auxiliar Administrativo",
+      "status": "Active",
+      "created_at": "2025-09-17T13:46:25.007772",
+      "total_candidates": 1083,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "1888f9d3-aea4-4d96-bc60-b24bb06d1492",
+          "name": "Modelado Financiero en Excel"
+        },
+        {
+          "id": "0ff1c866-2459-43e6-a949-28e7e828914f",
+          "name": "Prueba de Competencias para Auxiliar Administrativo"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/e3177025-68f1-48cb-8159-c3d2caa47ad2"
+    },
+    {
+      "id": "d75795a6-71d7-49fb-a9a1-588742e16e03",
+      "type": "Assessment",
+      "name": "Delineante Proyectista",
+      "job_title": "Delineante Proyectista",
+      "status": "Active",
+      "created_at": "2025-09-12T16:15:22.638625",
+      "total_candidates": 556,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/d75795a6-71d7-49fb-a9a1-588742e16e03"
+    },
+    {
+      "id": "88ac56aa-812d-4a9c-82ee-2c2be55d34fe",
+      "type": "Assessment",
+      "name": "Especialista en SEM, Meta Ads y SEO",
+      "job_title": "Especialista en SEM, Meta Ads y SEO",
+      "status": "Active",
+      "created_at": "2025-09-01T14:18:20.263019",
+      "total_candidates": 75,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "83b8434e-bfde-4711-97ce-e4d92cba3c2b",
+          "name": "Especialista en Marketing Digital - Evaluación Integral"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/88ac56aa-812d-4a9c-82ee-2c2be55d34fe"
+    },
+    {
+      "id": "7f2b909f-71fb-4b73-b143-7e0a0283061e",
+      "type": "Assessment",
+      "name": "Delineante Proyectista",
+      "job_title": "Delineante Proyectista",
+      "status": "Active",
+      "created_at": "2025-08-13T12:49:30.528998",
+      "total_candidates": 221,
+      "tests": [
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "0aeff7c3-fb92-4605-baba-fe47e99ef61a",
+          "name": "Evaluación para Dibujante de Arquitectura"
+        },
+        {
+          "id": "d7c7135a-6518-495a-8aab-075d7b197bbe",
+          "name": "Evaluación para Delineante Residencial Avanzado"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/7f2b909f-71fb-4b73-b143-7e0a0283061e"
+    },
+    {
+      "id": "b40b950a-85e9-4717-9df0-1c451db38c68",
+      "type": "Assessment",
+      "name": "Especialista Contable",
+      "job_title": "Especialista Contable",
+      "status": "Active",
+      "created_at": "2025-08-06T21:55:22.333629",
+      "total_candidates": 262,
+      "tests": [
+        {
+          "id": "633d60a5-623a-4de7-b68e-a7c6b5837514",
+          "name": "Evaluación Avanzada de Contabilidad"
+        },
+        {
+          "id": "a09cf6f9-9529-4a72-bf0b-0a25f4478c19",
+          "name": "Test de personalidad DISC"
+        },
+        {
+          "id": "76576419-a41e-49ce-9214-489945686d49",
+          "name": "Evaluación Avanzada de CRM (Customer Relationship Management)"
+        }
+      ],
+      "invitation_link": "https://app.intelliscreen.io/invite/b40b950a-85e9-4717-9df0-1c451db38c68"
     }
-  ]
+  ],
+  "summary": {
+    "total_positions": 38,
+    "active_positions": 38,
+    "draft_positions": 0,
+    "total_candidates_across_all": 9666
+  },
+  "pagination": {
+    "page": 1,
+    "per_page": 50,
+    "total_count": 38,
+    "total_pages": 1,
+    "has_next": false,
+    "has_previous": false
+  }
 }
