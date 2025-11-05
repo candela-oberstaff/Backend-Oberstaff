@@ -1,10 +1,10 @@
 import axios from "axios";
-import logger from "../logger.js";
+import logger from "../../logger.js";
 import dotenv from "dotenv";
 dotenv.config();
 
 export async function sendJobsToWhatsApp(data) {
-  const WAHA_URL = process.env.WAHA_URL; 
+  const WAHA_URL = process.env.WAHA_URL;
   const CHAT_ID = process.env.WHATSAPP_CHAT_ID;
   const API_KEY = process.env.WAHA_TOKEN;
 
@@ -15,7 +15,8 @@ export async function sendJobsToWhatsApp(data) {
 
   const message = data.positions
     .map((job) => {
-      const testsList = job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
+      const testsList =
+        job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
       const date = new Date(job.created_at).toLocaleDateString("es-ES");
 
       return `
@@ -63,7 +64,8 @@ export async function sendJobsToTelegram(jobs) {
   }
 
   for (const job of jobs) {
-    const testsList = job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
+    const testsList =
+      job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
     const date = new Date(job.created_at).toLocaleDateString("es-ES");
 
     const message = `

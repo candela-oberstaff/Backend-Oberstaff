@@ -1,7 +1,7 @@
 import axios from "axios";
-import { getJobsCache, setJobsCache } from "./cache.js";
+import logger from "../../logger.js";
+import { Job } from "../models/Job.js";
 import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
-import logger from "../logger.js";
 
 const API_KEY = process.env.INTELLISCREEN_API_KEY;
 const WORKFLOW_WEBHOOK = process.env.WORKFLOW_WEBHOOK_URL;
@@ -15,13 +15,18 @@ export const fetchActiveJobs = async () => {
     });
 
     const activeJobs = res.data.positions.filter((job) => job.status === "active");
-    const currentCache = getJobsCache();
+    const newJobs = [];
 
-    const newJobs = activeJobs.filter((job) => !currentCache.find((j) => j.id === job.id));
+    for (const job of activeJobs) {
+      const exists = await Job.findOne({ id: job.id });
+      if (!exists) {
+        newJobs.push(job);
+        await Job.create(job);
+      }
+    }
 
     if (newJobs.length > 0) {
-      logger.info(`🚀 Detectadas ${newJobs.length} vacantes nuevas.`);
-
+      logger.info(`🚀 ${newJobs.length} vacantes nuevas detectadas.`);
       await sendJobsToWhatsApp(newJobs);
       await sendJobsToTelegram(newJobs);
 
@@ -33,9 +38,6 @@ export const fetchActiveJobs = async () => {
           logger.error(`❌ Error enviando al workflow: ${err.message}`);
         }
       }
-
-      setJobsCache(activeJobs);
-      logger.info("🗃️ Cache actualizado.");
     } else {
       logger.info("📭 No se encontraron vacantes nuevas.");
     }
