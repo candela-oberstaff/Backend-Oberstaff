@@ -166,3 +166,201 @@
 [2025-11-05 15:15:36] INFO: ✅ Backend corriendo en http://localhost:3001
 [2025-11-05 15:15:44] INFO: ✅ Backend corriendo en http://localhost:3001
 [2025-11-05 15:18:03] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:08:51] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:10:05] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:10:16] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:11:50] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:11:53] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:12:21] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:13:21] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:13:36] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:14:08] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:14:27] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:14:51] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:15:02] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:17:14] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:17:40] ERROR: ❌ Error enviando por Telegram: CHAT_ID is not defined
+[2025-11-06 11:17:40] ERROR: ❌ Error notificando workflow: axios is not defined
+[2025-11-06 11:28:02] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:39:28] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:39:34] ERROR: ❌ Error enviando por Telegram: CHAT_ID is not defined
+[2025-11-06 11:39:34] ERROR: ❌ Error notificando workflow: axios is not defined
+[2025-11-06 11:57:54] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 11:58:09] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-06 12:00:00] INFO: ⏰ Cron ejecutando verificación de vacantes...
+[2025-11-06 12:00:00] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-06 12:00:00] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-06 12:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-06 12:00:03] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-06 12:04:20] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 12:04:27] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-06 12:04:28] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 12:05:35] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-06 12:05:36] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 12:05:55] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 12:06:08] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-06 12:06:09] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 12:09:08] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-06 12:09:08] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 12:09:52] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 12:10:01] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 12:10:02] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 12:13:25] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 12:13:33] INFO: ✅ El bot tiene acceso al canal: Trabajos Remotos 🌎 LATAM
+[2025-11-06 12:13:33] ERROR: ❌ Error enviando por Telegram: Forbidden: bot is not a member of the channel chat
+[2025-11-06 12:13:34] ERROR: ❌ Error notificando workflow: Request failed with status code 404
+[2025-11-06 13:30:54] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:31:01] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:31:02] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:31:02] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:31:03] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 13:31:03] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:31:03] ERROR: ❌ Error notificando workflow https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b: Request failed with status code 404
+[2025-11-06 13:37:40] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:38:02] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:38:02] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:38:02] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:38:03] INFO: ✅ Conexión exitosa con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:38:04] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:38:04] ERROR: ❌ Error notificando workflow https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b: Request failed with status code 404
+[2025-11-06 13:42:56] ERROR: Connection terminated due to connection timeout
+[2025-11-06 13:43:03] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:43:12] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:43:12] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:43:12] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:43:13] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 13:43:13] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:43:14] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:53:39] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:53:40] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:53:40] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:53:41] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 13:53:41] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:53:42] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:55:10] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:56:36] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:56:40] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:56:41] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:56:41] INFO: 🔍 Verificando conexión con workflow: https://oberstaffworkspace.slack.com/archives/D099AQ721BL/p1762447677973419
+[2025-11-06 13:56:43] INFO: ✅ Conexión exitosa con workflow: https://oberstaffworkspace.slack.com/archives/D099AQ721BL/p1762447677973419
+[2025-11-06 13:56:43] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:56:44] INFO: 📤 Vacante de prueba enviada correctamente a: https://oberstaffworkspace.slack.com/archives/D099AQ721BL/p1762447677973419
+[2025-11-06 13:58:23] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 13:58:25] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 13:58:26] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 13:58:26] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 13:58:27] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 13:58:27] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 13:58:28] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 14:00:00] INFO: ⏰ Cron ejecutando verificación de vacantes...
+[2025-11-06 14:00:00] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-06 14:00:00] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-06 14:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-06 14:00:03] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-06 14:10:02] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:10:04] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:10:04] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 14:10:05] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 14:10:05] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:10:06] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 14:11:52] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:11:53] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:11:53] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 14:11:54] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b)
+[2025-11-06 14:11:54] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:11:54] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/c95805f6-7d56-4545-bff2-6af3e6204e0b
+[2025-11-06 14:12:13] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 14:12:15] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:12:16] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:12:16] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:12:17] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3)
+[2025-11-06 14:12:17] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:12:18] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:17:03] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:17:04] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:17:04] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:17:05] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3)
+[2025-11-06 14:17:05] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:17:05] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:17:25] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:17:26] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:17:26] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:17:27] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3)
+[2025-11-06 14:17:27] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:17:27] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:32:46] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:32:47] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:32:47] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:32:48] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3)
+[2025-11-06 14:32:48] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:32:48] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:41:13] INFO: 🔍 Verificando conexión con workflow: https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/
+[2025-11-06 14:41:14] WARN: ⚠️ Workflow no respondió correctamente (https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/)
+[2025-11-06 14:41:14] INFO: 🔍 Verificando conexión con workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 14:41:15] WARN: ⚠️ Workflow no respondió correctamente (https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3)
+[2025-11-06 14:41:15] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 14:41:15] INFO: 📤 Vacante de prueba enviada correctamente a: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 15:00:00] INFO: ⏰ Cron ejecutando verificación de vacantes...
+[2025-11-06 15:00:00] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-06 15:00:00] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-06 15:00:04] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-06 15:00:04] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-06 15:06:35] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:06:45] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 15:06:46] INFO: ✅ Enviado correctamente a workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 15:07:53] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 15:07:54] INFO: ✅ Enviado correctamente a workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 15:08:43] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 15:08:44] INFO: ✅ Enviado correctamente a workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 15:09:36] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:09:50] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404
+[2025-11-06 15:09:51] INFO: ✅ Enviado correctamente a workflow: https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3
+[2025-11-06 15:11:48] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:11:50] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:11:59] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:13:13] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:13:43] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:13:49] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: axios is not defined
+[2025-11-06 15:13:49] ERROR: ❌ Error notificando workflow https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3: axios is not defined
+[2025-11-06 15:15:55] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:16:00] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: axios is not defined
+[2025-11-06 15:16:00] ERROR: ❌ Error notificando workflow https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3: axios is not defined
+[2025-11-06 15:16:13] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:16:55] ERROR: ❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: axios is not defined
+[2025-11-06 15:16:55] ERROR: ❌ Error notificando workflow https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3: axios is not defined
+[2025-11-06 15:17:31] ERROR: ❌ Error enviando por Telegram: CHAT_ID is not defined
+[2025-11-06 15:23:10] ERROR: ❌ Error enviando por Telegram: CHAT_ID is not defined
+[2025-11-06 15:23:23] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:23:40] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:23:46] ERROR: ❌ Error enviando por Telegram: CHAT_ID is not defined
+[2025-11-06 15:25:23] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:25:38] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 15:48:52] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 15:49:25] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 15:50:57] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 15:52:16] ERROR: ❌ Error enviando por Telegram: Request failed with status code 403
+[2025-11-06 15:53:48] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:54:16] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:54:28] INFO: 📤 Telegram enviado: Vacante de prueba
+[2025-11-06 15:55:52] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:56:15] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 15:56:24] INFO: 📤 Telegram enviado: Vacante de prueba
+[2025-11-06 16:00:00] INFO: ⏰ Cron ejecutando verificación de vacantes...
+[2025-11-06 16:00:00] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-06 16:00:00] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-06 16:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-06 16:00:03] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-06 16:08:38] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:16:36] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:16:37] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:16:51] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:17:12] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:17:38] INFO: ✅ 40 vacantes cargadas en la base de datos.
+[2025-11-06 16:19:15] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:21:51] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-06 16:21:58] INFO: 📤 Telegram enviado: Vacante de prueba
+[2025-11-06 17:00:00] INFO: ⏰ Cron ejecutando verificación de vacantes...
+[2025-11-06 17:00:00] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-06 17:00:00] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-06 17:00:03] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-06 17:00:03] INFO: 📭 No se detectaron vacantes nuevas.

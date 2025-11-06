@@ -13,50 +13,44 @@ export async function sendJobsToWhatsApp(data) {
     return;
   }
 
-  const message = data.positions
-    .map((job) => {
-      const testsList =
-        job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
-      const date = new Date(job.created_at).toLocaleDateString("es-ES");
+  for (const job of data.positions) {
+    const message = `
+🔔 ¡Nueva oportunidad en Oberstaff! 🔔
 
-      return `
-        💼 *${job.job_title}*
-        🏢 *Tipo:* ${job.type || "No especificado"}
-        📅 *Publicado:* ${date}
-        👥 *Candidatos actuales:* ${job.total_candidates || 0}
-        🧪 *Tests asociados:*
-        ${testsList}
-        🔗 *Postula aquí:* ${job.invitation_link}
-        --------------------
-      `.trim();
-    })
-    .join("\n\n");
+💼 *Título del Puesto:*
+${job.job_title || job.title || "Sin título"}
 
-  try {
-    await axios.post(
-      `${WAHA_URL}/api/sendText`,
-      {
-        session: "default",
-        chatId: CHAT_ID,
-        text: message,
-      },
-      {
-        headers: {
-          "x-api-key": API_KEY,
-          "Content-Type": "application/json",
+🔗 *Enlace de Invitación:*
+${job.invitation_link || "No disponible"}
+    `.trim();
+
+    try {
+      await axios.post(
+        `${WAHA_URL}/api/sendText`,
+        {
+          session: "default",
+          chatId: CHAT_ID,
+          text: message,
         },
-      }
-    );
+        {
+          headers: {
+            "x-api-key": API_KEY,
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
-    console.log(`WhatsApp enviado con ${data.positions.length} vacantes.`);
-  } catch (error) {
-    console.error("Error enviando por WhatsApp:", error.message);
+      console.log(`✅ WhatsApp enviado: ${job.job_title || job.title}`);
+    } catch (error) {
+      console.error("❌ Error enviando por WhatsApp:", error.message);
+    }
   }
 }
 
+
 export async function sendJobsToTelegram(jobs) {
   const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-  //const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+  const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
   if (!jobs || jobs.length === 0) {
     logger.info("No hay vacantes para enviar a Telegram.");
@@ -64,19 +58,14 @@ export async function sendJobsToTelegram(jobs) {
   }
 
   for (const job of jobs) {
-    const testsList =
-      job.tests?.map((test) => `- ${test.name}`).join("\n") || "Ninguno";
-    const date = new Date(job.created_at).toLocaleDateString("es-ES");
-
     const message = `
-      💼 *${job.job_title || job.title}*
-      🏢 *Tipo:* ${job.type || "No especificado"}
-      📅 *Publicado:* ${date}
-      👥 *Candidatos actuales:* ${job.total_candidates || 0}
-      🧪 *Tests asociados:*
-      ${testsList}
-      🔗 *Postula aquí:* ${job.invitation_link}
-      --------------------
+🔔 *¡Nueva oportunidad en Oberstaff!* 🔔
+
+💼 *Título del Puesto:*
+${job.job_title || job.title || "Sin título"}
+
+🔗 *Enlace de Invitación:*
+${job.invitation_link || "No disponible"}
     `.trim();
 
     try {

@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import express from "express";
 import dotenv from "dotenv";
 import cron from "node-cron";
@@ -6,6 +5,8 @@ import router from "./src/jobs/routes.js";
 import { sendNewJobsFlow } from "./src/jobs/autoSender.js";
 import { setJobsCache } from "./src/jobs/cache.js";
 import logger from "./logger.js";
+import { pool } from "./src/db/postgresClient.js"; // conexión a supabase (pg)
+
 
 dotenv.config();
 
@@ -14,13 +15,14 @@ app.use(express.json());
 app.use(router);
 
 const PORT = process.env.PORT || 3001;
-const MONGODB_URI = process.env.MONGODB_URI;
 
+// CRON 1: Verificar vacantes nuevas cada hora
 cron.schedule("0 * * * *", async () => {
   logger.info("⏰ Cron ejecutando verificación de vacantes...");
   await sendNewJobsFlow();
 });
 
+// CRON 2: Limpiar cache diario
 cron.schedule("0 0 * * *", () => {
   logger.info("🧹 Limpiando cache de vacantes...");
   setJobsCache([]);
@@ -30,13 +32,3 @@ cron.schedule("0 0 * * *", () => {
 app.listen(PORT, () => {
   logger.info(`✅ Backend corriendo en http://localhost:${PORT}`);
 });
-
-
-
-mongoose.connect(MONGODB_URI)
-  .then(() => console.log("✅ Conectado a MongoDB"))
-  .catch((err) => console.error("❌ Error conectando a MongoDB:", err));
-
-
-process.on("uncaughtException", (err) => logger.error(`💥 Excepción no capturada: ${err.message}`));
-process.on("unhandledRejection", (reason) => logger.error(`⚠️ Promesa rechazada: ${reason}`));

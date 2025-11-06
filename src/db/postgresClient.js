@@ -1,0 +1,30 @@
+import pkg from "pg";
+import dotenv from "dotenv";
+dotenv.config();
+
+const { Pool } = pkg;
+
+export const pool = new Pool({
+  host: process.env.PG_HOST,
+  port: process.env.PG_PORT,
+  user: process.env.PG_USER,
+  password: process.env.PG_PASSWORD,
+  database: process.env.PG_DATABASE,
+  ssl: { rejectUnauthorized: false },
+  connectionTimeoutMillis: 10000, // ⏳ espera hasta 10 seg. antes de fallar
+  idleTimeoutMillis: 30000,       // ♻️ cierra conexiones inactivas después de 30 seg.
+  max: 10,                        // 🔢 máximo de conexiones simultáneas
+});
+
+// Probar conexión inicial
+pool.connect()
+  .then((client) => {
+    console.log("✅ Conectado a Supabase PostgreSQL");
+    client.release();
+  })
+  .catch((err) => console.error("❌ Error conectando a Supabase:", err.message));
+
+// Escuchar errores globales del pool (para que no crashee el server)
+pool.on("error", (err) => {
+  console.error("⚠️ Error inesperado en la conexión a la base de datos:", err.message);
+});
