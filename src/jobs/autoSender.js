@@ -16,9 +16,15 @@ export const sendNewJobsFlow = async () => {
       return;
     }
 
-    await sendJobsToWhatsApp(newJobs);
+    logger.info(`📤 Enviando ${newJobs.length} nuevas vacantes...`);
+
+    // WhatsApp espera objeto { positions }
+    await sendJobsToWhatsApp({ positions: newJobs });
+
+    // Telegram espera array de jobs
     await sendJobsToTelegram(newJobs);
 
+    // Notificar workflow externo (opcional)
     const WORKFLOW_WEBHOOK = process.env.WORKFLOW_WEBHOOK_URL;
     if (WORKFLOW_WEBHOOK) {
       try {
@@ -34,3 +40,8 @@ export const sendNewJobsFlow = async () => {
     logger.error(`❌ Error en sendNewJobsFlow: ${err.message}`);
   }
 };
+
+// Invocar si ejecutás el archivo directamente
+if (require.main === module) {
+  sendNewJobsFlow();
+}

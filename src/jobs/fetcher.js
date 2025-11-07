@@ -5,12 +5,13 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const API_KEY = process.env.INTELLISCREEN_API_KEY;
+const INTELLISCREEN_URL = "https://api.intelliscreen.io/positions";
 
 export const fetchActiveJobs = async () => {
   try {
     logger.info("🔗 Consultando API Intelliscreen...");
 
-    const res = await axios.get("https://api.intelliscreen.io/positions", {
+    const res = await axios.get(INTELLISCREEN_URL, {
       params: {
         page: 1,
         per_page: 100,
@@ -21,17 +22,26 @@ export const fetchActiveJobs = async () => {
         Accept: "application/json",
         "X-API-Key": API_KEY,
       },
+      timeout: 15000,
     });
 
-    const activeJobs = res.data.positions.filter((job) => job.status === "active");
-    const newJobs = [];
+    const allJobs = res.data.positions || [];
 
-    for (const job of activeJobs) {
-      const exists = await Job.findOne({ id: job.id });
-      if (!exists) {
-        await Job.create(job);
-        newJobs.push(job);
-      }
+    // Filtrar por status "active" (case-insensitive)
+    const activeJobs = allJobs.filter(
+      (job) => String(job.status || "").toLowerCase() === "active"
+    );
+
+    // Traer todos los ids existentes en la DB una sola vez
+    const existingIds = await Job.getAllIds();
+    const existingSet = new Set(existingIds);
+
+    // Detectar solo los jobs que no estén en la DB (por id)
+    const newJobs = activeJobs.filter((job) => !existingSet.has(job.id));
+
+    // Insertar nuevas vacantes en la DB (antes de enviar)
+    for (const job of newJobs) {
+      await Job.create(job);
     }
 
     if (newJobs.length > 0) {

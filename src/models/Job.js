@@ -4,7 +4,7 @@ export const Job = {
   async findActive() {
     const { rows } = await pool.query(
       "SELECT * FROM jobs WHERE status = $1 ORDER BY created_at DESC",
-      ["active"]
+      ["Active"]
     );
     return rows;
   },
@@ -14,28 +14,30 @@ export const Job = {
     return rows[0];
   },
 
+  async getAllIds() {
+    const { rows } = await pool.query("SELECT id FROM jobs");
+    return rows.map(r => r.id);
+  },
+
   async create(job) {
     const query = `
       INSERT INTO jobs (
-        id, job_title, title, company_name, location, type,
-        total_candidates, invitation_link, tests, status, created_at
-      ) VALUES (
-        $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11
+        id, type, name, job_title, status,
+        created_at, total_candidates, tests, invitation_link
       )
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)
       ON CONFLICT (id) DO NOTHING;
     `;
     const values = [
       job.id,
-      job.job_title,
-      job.title,
-      job.company_name,
-      job.location,
       job.type,
-      job.total_candidates,
-      job.invitation_link,
+      job.name,
+      job.job_title,
+      job.status || "Active",
+      job.created_at ? new Date(job.created_at) : new Date(),
+      job.total_candidates || 0,
       JSON.stringify(job.tests || []),
-      job.status,
-      job.created_at || new Date(),
+      job.invitation_link || null,
     ];
     await pool.query(query, values);
   },

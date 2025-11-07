@@ -364,3 +364,26 @@
 [2025-11-06 17:00:00] INFO: 🔗 Consultando API Intelliscreen...
 [2025-11-06 17:00:03] INFO: 📭 No se encontraron vacantes nuevas.
 [2025-11-06 17:00:03] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-07 11:12:54] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-07 11:13:12] INFO: 📤 Telegram enviado: Vacante de prueba
+[2025-11-07 11:16:50] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-07 11:27:37] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-07 11:34:45] INFO: ✅ 40 nuevas vacantes insertadas (de 40 totales).
+[2025-11-07 11:44:02] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-07 11:47:28] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-07 11:47:28] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-07 11:47:40] INFO: 📭 No se encontraron vacantes nuevas.
+[2025-11-07 11:47:40] INFO: 📭 No se detectaron vacantes nuevas.
+[2025-11-07 11:59:00] INFO: 🚀 Obteniendo las últimas 3 vacantes de la base de datos...
+[2025-11-07 11:59:01] INFO: ✅ Se encontraron 3 vacantes para enviar:
+[2025-11-07 11:59:03] INFO: 📤 Telegram enviado: Paralegal Bilingüe
+[2025-11-07 11:59:04] INFO: 📤 Telegram enviado: Diseñador Gráfico y Editor de Video
+[2025-11-07 11:59:04] INFO: 📤 Telegram enviado: Data Entry
+[2025-11-07 11:59:07] INFO: 🎯 Envío de las últimas 3 vacantes completado con éxito.
+[2025-11-07 12:01:24] INFO: 🚀 Obteniendo las últimas 3 vacantes de la base de datos...
+[2025-11-07 12:01:27] INFO: ✅ Se encontraron 3 vacantes para enviar:
+[2025-11-07 12:01:29] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-07 12:01:29] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-07 12:01:29] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
+[2025-11-07 12:01:32] INFO: 🎯 Envío de las últimas 3 vacantes completado con éxito.
+[2025-11-07 12:16:32] ERROR: ❌ Error enviando por Telegram: Request failed with status code 404

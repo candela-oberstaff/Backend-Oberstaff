@@ -14,18 +14,23 @@ export async function sendJobsToWhatsApp(data) {
   }
 
   for (const job of data.positions) {
+    const title = job.job_title || job.title || "Sin título";
+    const link = job.invitation_link || "No disponible";
+
     const message = `
 🔔 ¡Nueva oportunidad en Oberstaff! 🔔
 
-💼 *Título del Puesto:*
-${job.job_title || job.title || "Sin título"}
+💼 Título del Puesto:
+${title}
 
-🔗 *Enlace de Invitación:*
-${job.invitation_link || "No disponible"}
+🔗 Enlace de Invitación:
+${link}
     `.trim();
 
+    console.log("📤 Enviando a WhatsApp:", message);
+
     try {
-      await axios.post(
+      const res = await axios.post(
         `${WAHA_URL}/api/sendText`,
         {
           session: "default",
@@ -40,13 +45,18 @@ ${job.invitation_link || "No disponible"}
         }
       );
 
-      console.log(`✅ WhatsApp enviado: ${job.job_title || job.title}`);
+      if (res.status === 200) {
+        console.log(`✅ WhatsApp enviado: ${title}`);
+      } else {
+        console.warn(`⚠️ WhatsApp devolvió código ${res.status} para ${title}`);
+      }
     } catch (error) {
-      console.error("❌ Error enviando por WhatsApp:", error.message);
+      console.error(`❌ Error enviando por WhatsApp (${title}):`, error.message);
     }
   }
 }
 
+// -------------------------------------------------------------
 
 export async function sendJobsToTelegram(jobs) {
   const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
