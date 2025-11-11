@@ -3,6 +3,9 @@ import logger from "../../logger.js";
 import { fetchActiveJobs } from "./fetcher.js";
 import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
 import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
 dotenv.config();
 
 export const sendNewJobsFlow = async () => {
@@ -41,7 +44,8 @@ export const sendNewJobsFlow = async () => {
   }
 };
 
-// Invocar si ejecutás el archivo directamente
-if (require.main === module) {
+// --- Solo ejecuta si se corre directamente con "node autoSender.js" ---
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] === __filename) {
   sendNewJobsFlow();
 }
