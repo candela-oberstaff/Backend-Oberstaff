@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import logger from "../../logger.js";
 import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
-import { pool } from "../db/postgresClient.js"; // 👈 ESTE ya tiene la conexión lista
+import { pool } from "../db/postgresClient.js";
 
 dotenv.config();
 
@@ -17,10 +17,8 @@ async function sendSingleJob(jobId) {
     const job = rows[0];
     console.log(`📤 Enviando vacante: ${job.job_title}`);
 
-    // Enviar a WhatsApp
     await sendJobsToWhatsApp({ positions: [job] });
 
-    // Enviar a Telegram
     await sendJobsToTelegram([job]);
 
     console.log("✅ Vacante enviada correctamente a ambos canales.");
@@ -31,5 +29,4 @@ async function sendSingleJob(jobId) {
   }
 }
 
-// Ejecutar directamente
 sendSingleJob("7f2c0419-d125-4884-a347-e0f753d8270e");

@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import logger from "../../logger.js";
 import { pool } from "../db/postgresClient.js";
-import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js"; // ajusta el path si está en otro lugar
+import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
 
 dotenv.config();
 
@@ -9,7 +9,6 @@ async function sendLastThreeJobs() {
   try {
     logger.info("🚀 Obteniendo las últimas 3 vacantes de la base de datos...");
 
-    // 1️⃣ Traer las últimas 3 vacantes creadas
     const result = await pool.query(
       `SELECT * FROM jobs ORDER BY created_at DESC LIMIT 3;`
     );
@@ -25,10 +24,9 @@ async function sendLastThreeJobs() {
 
     jobs.forEach((j) => console.log(`• ${j.job_title || j.title}`));
 
-    // 2️⃣ Formato compatible con WhatsApp (usa data.positions)
     const whatsappData = { positions: jobs };
 
-    // 3️⃣ Enviar por ambos canales
+  
     await sendJobsToTelegram(jobs);
     await sendJobsToWhatsApp(whatsappData);
 

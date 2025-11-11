@@ -27,19 +27,15 @@ export const fetchActiveJobs = async () => {
 
     const allJobs = res.data.positions || [];
 
-    // Filtrar por status "active" (case-insensitive)
     const activeJobs = allJobs.filter(
       (job) => String(job.status || "").toLowerCase() === "active"
     );
 
-    // Traer todos los ids existentes en la DB una sola vez
     const existingIds = await Job.getAllIds();
     const existingSet = new Set(existingIds);
 
-    // Detectar solo los jobs que no estén en la DB (por id)
     const newJobs = activeJobs.filter((job) => !existingSet.has(job.id));
 
-    // Insertar nuevas vacantes en la DB (antes de enviar)
     for (const job of newJobs) {
       await Job.create(job);
     }

@@ -2,11 +2,10 @@ import fs from "fs";
 import { pool } from "../db/postgresClient.js";
 import logger from "../../logger.js";
 
-const FILE_PATH = "./vacantes.json"; // ruta al archivo con los datos
+const FILE_PATH = "./vacantes.json"; 
 
 async function seedJobs() {
   try {
-    // 1️⃣ Leer y parsear el archivo JSON
     const data = fs.readFileSync(FILE_PATH, "utf-8");
     const json = JSON.parse(data);
 
@@ -17,7 +16,6 @@ async function seedJobs() {
       return;
     }
 
-    // 2️⃣ Insertar o ignorar duplicados
     let insertedCount = 0;
 
     for (const job of jobs) {

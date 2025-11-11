@@ -5,7 +5,7 @@ import router from "./src/jobs/routes.js";
 import { sendNewJobsFlow } from "./src/jobs/autoSender.js";
 import { setJobsCache } from "./src/jobs/cache.js";
 import logger from "./logger.js";
-import { pool } from "./src/db/postgresClient.js"; // conexión a supabase (pg)
+import { pool } from "./src/db/postgresClient.js";
 
 
 dotenv.config();
@@ -16,13 +16,11 @@ app.use(router);
 
 const PORT = process.env.PORT || 3001;
 
-// CRON 1: Verificar vacantes nuevas cada hora
-cron.schedule("0 * * * *", async () => {
-  logger.info("⏰ Cron ejecutando verificación de vacantes...");
+cron.schedule("*/30 * * * *", async () => {
+  logger.info("⏰ Cron ejecutando verificación de vacantes cada 30 minutos...");
   await sendNewJobsFlow();
 });
 
-// CRON 2: Limpiar cache diario
 cron.schedule("0 0 * * *", () => {
   logger.info("🧹 Limpiando cache de vacantes...");
   setJobsCache([]);

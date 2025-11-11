@@ -21,13 +21,10 @@ export const sendNewJobsFlow = async () => {
 
     logger.info(`📤 Enviando ${newJobs.length} nuevas vacantes...`);
 
-    // WhatsApp espera objeto { positions }
     await sendJobsToWhatsApp({ positions: newJobs });
 
-    // Telegram espera array de jobs
     await sendJobsToTelegram(newJobs);
 
-    // Notificar workflow externo (opcional)
     const WORKFLOW_WEBHOOK = process.env.WORKFLOW_WEBHOOK_URL;
     if (WORKFLOW_WEBHOOK) {
       try {
@@ -44,7 +41,6 @@ export const sendNewJobsFlow = async () => {
   }
 };
 
-// --- Solo ejecuta si se corre directamente con "node autoSender.js" ---
 const __filename = fileURLToPath(import.meta.url);
 if (process.argv[1] === __filename) {
   sendNewJobsFlow();

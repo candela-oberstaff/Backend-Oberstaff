@@ -387,3 +387,11 @@
 [2025-11-07 12:01:29] ERROR: ❌ Error enviando por Telegram: Request failed with status code 400
 [2025-11-07 12:01:32] INFO: 🎯 Envío de las últimas 3 vacantes completado con éxito.
 [2025-11-07 12:16:32] ERROR: ❌ Error enviando por Telegram: Request failed with status code 404
+[2025-11-11 13:33:57] INFO: ✅ Backend corriendo en http://localhost:3001
+[2025-11-11 13:47:30] INFO: 🔍 Iniciando verificación de vacantes nuevas...
+[2025-11-11 13:47:30] INFO: 🔗 Consultando API Intelliscreen...
+[2025-11-11 13:47:34] INFO: 🚀 2 vacantes nuevas detectadas y guardadas.
+[2025-11-11 13:47:34] INFO: 📤 Enviando 2 nuevas vacantes...
+[2025-11-11 13:47:37] INFO: 📤 Telegram enviado: CRM Manager Técnico con N8N y GoHighLevel
+[2025-11-11 13:47:38] INFO: 📤 Telegram enviado: Auxiliar Administrativo
+[2025-11-11 13:47:38] INFO: ✅ Flujo completado: 2 vacantes nuevas enviadas.
