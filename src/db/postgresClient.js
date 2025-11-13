@@ -10,7 +10,7 @@ export const pool = new Pool({
   user: process.env.PG_USER,
   password: process.env.PG_PASSWORD,
   database: process.env.PG_DATABASE,
-  ssl: { rejectUnauthorized: false },
+  //ssl: { rejectUnauthorized: false },
   connectionTimeoutMillis: 10000, // ⏳ espera hasta 10 seg. antes de fallar
   idleTimeoutMillis: 30000,       // ♻️ cierra conexiones inactivas después de 30 seg.
   max: 10,                        // 🔢 máximo de conexiones simultáneas

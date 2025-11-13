@@ -1,36 +1,19 @@
-import fs from "fs";
+import { pool } from "../db/postgresClient.js";
 
-import { sendJobsToWhatsApp } from "./notifiers.js";
-import logger from "../../logger.js";
-
-const CACHE_FILE = "./jobsCache.json";
-
-let jobsCache = [];
-if (fs.existsSync(CACHE_FILE)) {
-  const data = fs.readFileSync(CACHE_FILE, "utf-8");
-  jobsCache = JSON.parse(data);
-}
-
-export const getJobsCache = () => jobsCache;
-
-export const setJobsCache = (newJobs) => {
-  jobsCache = newJobs;
-  fs.writeFileSync(CACHE_FILE, JSON.stringify(jobsCache, null, 2));
+// Verifica si un job ya fue enviado
+export const isSent = async (jobId) => {
+  const { rows } = await pool.query(
+    "SELECT 1 FROM jobs_sent_cache WHERE job_id = $1",
+    [jobId]
+  );
+  return rows.length > 0;
 };
 
-export const addJobsToCache = (newJobs) => {
-  jobsCache.push(...newJobs);
-  setJobsCache(jobsCache);
-};
-
-export const sendNewJobsWhatsApp = async () => {
-  const jobs = getJobsCache();
-
-  if (jobs.length === 0) {
-    logger.info("📭 No hay vacantes en cache para enviar.");
-    return;
-  }
-
-  logger.info(`📤 Enviando ${jobs.length} vacantes del cache por WhatsApp...`);
-  await sendJobsToWhatsApp(jobs);
+// Marca jobs como enviados
+export const markAsSent = async (jobs) => {
+  if (!jobs.length) return;
+  const values = jobs.map(job => `('${job.id}', NOW())`).join(", ");
+  await pool.query(
+    `INSERT INTO jobs_sent_cache (job_id, sent_at) VALUES ${values} ON CONFLICT (job_id) DO NOTHING`
+  );
 };

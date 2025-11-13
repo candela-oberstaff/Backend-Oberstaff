@@ -1,7 +1,8 @@
 import axios from "axios";
 import logger from "../../logger.js";
-import { Job } from "../models/Job.js";
+import { Job } from "../models/Job.js"; 
 import dotenv from "dotenv";
+
 dotenv.config();
 
 const API_KEY = process.env.INTELLISCREEN_API_KEY;
@@ -28,27 +29,40 @@ export const fetchActiveJobs = async () => {
     const allJobs = res.data.positions || [];
 
     const activeJobs = allJobs.filter(
-      (job) => String(job.status || "").toLowerCase() === "active"
+      job => String(job.status || "").toLowerCase() === "active"
     );
 
-    const existingIds = await Job.getAllIds();
-    const existingSet = new Set(existingIds);
-
-    const newJobs = activeJobs.filter((job) => !existingSet.has(job.id));
-
-    for (const job of newJobs) {
-      await Job.create(job);
-    }
-
-    if (newJobs.length > 0) {
-      logger.info(`🚀 ${newJobs.length} vacantes nuevas detectadas y guardadas.`);
-    } else {
-      logger.info("📭 No se encontraron vacantes nuevas.");
-    }
-
-    return newJobs;
+    logger.info(`📦 ${activeJobs.length} vacantes activas obtenidas de la API.`);
+    return activeJobs;
   } catch (err) {
     logger.error(`❌ Error al consultar Intelliscreen: ${err.message}`);
     return [];
   }
+};
+
+export const fetchTodayJobs = async () => {
+  const activeJobs = await fetchActiveJobs();
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+
+  const todayJobs = [];
+
+  for (const job of activeJobs) {
+    const createdAt = new Date(job.created_at);
+
+    if (createdAt >= today && createdAt < tomorrow) {
+      const exists = await Job.findById(job.id);
+      if (!exists) {
+        todayJobs.push(job);
+      } else {
+        logger.info(`⚠️ Vacante con ID ${job.id} ya existe en la DB, se omite.`);
+      }
+    }
+  }
+
+  logger.info(`📆 ${todayJobs.length} vacantes nuevas del día (no duplicadas en DB).`);
+  return todayJobs;
 };
