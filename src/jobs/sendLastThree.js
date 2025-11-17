@@ -1,4 +1,3 @@
-// sendYesterdayIntelliJobs.js
 import dotenv from "dotenv";
 import axios from "axios";
 import logger from "../../logger.js";
@@ -25,13 +24,11 @@ async function sendYesterdayJobs() {
       process.exit(0);
     }
 
-    // Fecha de ayer
     const yesterday = new Date();
     yesterday.setDate(yesterday.getDate() - 1);
     const startOfYesterday = new Date(yesterday.setHours(0, 0, 0, 0));
     const endOfYesterday = new Date(yesterday.setHours(23, 59, 59, 999));
 
-    // Filtrar vacantes de ayer y activas
     const yesterdayJobs = allJobs.filter(job => {
       const created = new Date(job.created_at);
       return created >= startOfYesterday && created <= endOfYesterday &&
@@ -43,7 +40,6 @@ async function sendYesterdayJobs() {
       process.exit(0);
     }
 
-    // Filtrar las que ya existen en la DB
     const existingIdsResult = await pool.query("SELECT id FROM jobs WHERE id = ANY($1)", [
       yesterdayJobs.map(j => j.id),
     ]);
@@ -56,7 +52,6 @@ async function sendYesterdayJobs() {
       process.exit(0);
     }
 
-    // Guardar en DB antes de enviar
     for (const job of jobsToSend) {
       await pool.query(
         `INSERT INTO jobs (id, job_title, status, created_at, total_candidates, tests, invitation_link)
@@ -78,7 +73,6 @@ async function sendYesterdayJobs() {
     await sendJobsToWhatsApp({ positions: jobsToSend });
     await sendJobsToTelegram(jobsToSend);
 
-    // Notificar workflows
     const workflows = [process.env.WORKFLOW_WEBHOOK_URL, process.env.WORKFLOW_WEBHOOK_ZAPIER, process.env.WORKFLOW_WEBHOOK_N8N].filter(Boolean);
     for (const url of workflows) {
       try {

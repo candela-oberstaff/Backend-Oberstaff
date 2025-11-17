@@ -1,6 +1,6 @@
+import { isSent } from "./cache.js";
 import axios from "axios";
 import logger from "../../logger.js";
-import { Job } from "../models/Job.js"; 
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -40,11 +40,14 @@ export const fetchActiveJobs = async () => {
   }
 };
 
+
+
 export const fetchTodayJobs = async () => {
   const activeJobs = await fetchActiveJobs();
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+
   const tomorrow = new Date(today);
   tomorrow.setDate(today.getDate() + 1);
 
@@ -54,15 +57,15 @@ export const fetchTodayJobs = async () => {
     const createdAt = new Date(job.created_at);
 
     if (createdAt >= today && createdAt < tomorrow) {
-      const exists = await Job.findById(job.id);
-      if (!exists) {
+      const sent = await isSent(job.id);
+      if (!sent) {
         todayJobs.push(job);
       } else {
-        logger.info(`⚠️ Vacante con ID ${job.id} ya existe en la DB, se omite.`);
+        logger.info(`⚠️ Ya enviada (cache): ${job.id}`);
       }
     }
   }
 
-  logger.info(`📆 ${todayJobs.length} vacantes nuevas del día (no duplicadas en DB).`);
+  logger.info(`📆 ${todayJobs.length} vacantes nuevas del día (según PostgreSQL).`);
   return todayJobs;
 };

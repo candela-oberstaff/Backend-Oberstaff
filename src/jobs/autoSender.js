@@ -6,38 +6,40 @@ import axios from "axios";
 
 export const sendNewJobsFlow = async () => {
   try {
-    logger.info("🔍 Iniciando verificación de vacantes nuevas del día...");
+    logger.info("🔍 Buscando vacantes nuevas del día...");
 
-    const newJobs = await fetchTodayJobs();
-
-    if (!newJobs.length) {
-      logger.info("📭 No se encontraron vacantes nuevas del día.");
+    const todayJobs = await fetchTodayJobs();
+    if (!todayJobs.length) {
+      logger.info("📭 No hay vacantes nuevas para enviar.");
       return;
     }
 
-    // Filtrar solo las vacantes que aún no fueron enviadas
+    // Filtrar solo vacantes NO enviadas (seguridad extra)
     const jobsToSend = [];
-    for (const job of newJobs) {
-      if (!(await isSent(job.id))) jobsToSend.push(job);
+    for (const job of todayJobs) {
+      if (!(await isSent(job.id))) {
+        jobsToSend.push(job);
+      }
     }
 
     if (!jobsToSend.length) {
-      logger.info("📭 Todas las vacantes nuevas ya fueron enviadas anteriormente.");
+      logger.info("📭 Todas las vacantes ya fueron enviadas antes.");
       return;
     }
 
-    logger.info(`📤 Enviando ${jobsToSend.length} vacantes nuevas por WhatsApp y Telegram...`);
+    logger.info(`📤 Enviando ${jobsToSend.length} vacantes...`);
 
     await sendJobsToWhatsApp({ positions: jobsToSend });
     await sendJobsToTelegram(jobsToSend);
 
+    // Guardar en cache de PostgreSQL
     await markAsSent(jobsToSend);
 
-    // Notificar a workflows
+    // Notificar workflows (si existen)
     const workflows = [
       process.env.WORKFLOW_WEBHOOK_URL,
       process.env.WORKFLOW_WEBHOOK_ZAPIER,
-      process.env.WORKFLOW_WEBHOOK_N8N
+      process.env.WORKFLOW_WEBHOOK_N8N,
     ].filter(Boolean);
 
     for (const url of workflows) {
