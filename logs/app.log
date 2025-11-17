@@ -452,3 +452,6 @@
 [2025-11-13 13:38:34] INFO: ✅ Backend corriendo en http://localhost:3001
 [2025-11-13 13:38:35] INFO: 🔍 Iniciando envío de vacantes de ayer desde Intelliscreen...
 [2025-11-13 13:38:38] INFO: 📭 Todas las vacantes de ayer ya fueron enviadas.
+[2025-11-17 15:33:37] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: l6wczoq[39m
+[2025-11-17 15:33:37] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-11-17 15:33:37] [32minfo[39m: [32m🆔 Instance ID activo: l6wczoq[39m

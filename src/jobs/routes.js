@@ -1,6 +1,5 @@
 import express from "express";
 import logger from "../../logger.js";
-import { Job } from "../models/Job.js";
 import { sendJobsToWhatsApp, sendJobsToTelegram } from "./notifiers.js";
 
 const router = express.Router();
