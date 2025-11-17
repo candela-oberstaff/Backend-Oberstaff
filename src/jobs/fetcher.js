@@ -33,12 +33,21 @@ export const fetchActiveJobs = async () => {
     );
 
     logger.info(`📦 ${activeJobs.length} vacantes activas obtenidas de la API.`);
+
+
+
+    logger.info("💾 Guardando vacantes activas en la tabla jobs...");
+    await saveJobs(activeJobs);
+    logger.info("✅ Vacantes guardadas/actualizadas correctamente en jobs.");
+    
+
     return activeJobs;
   } catch (err) {
     logger.error(`❌ Error al consultar Intelliscreen: ${err.message}`);
     return [];
   }
 };
+
 
 
 
