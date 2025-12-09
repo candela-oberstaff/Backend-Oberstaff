@@ -38,6 +38,7 @@ export const fetchActiveJobs = async () => {
     );
 
     logger.info(`📦 ${uniqueActiveJobs.length} vacantes activas obtenidas de la API.`);
+    logger.debug(`📋 Nombres: ${uniqueActiveJobs.map(j => j.job_title || j.name).join(", ")}`);
 
 
 
@@ -75,8 +76,10 @@ export const fetchTodayJobs = async () => {
       if (!sent) {
         todayJobs.push(job);
       } else {
-        logger.info(`⚠️ Ya enviada (cache): ${job.id}`);
+        logger.info(`⚠️ [SKIP] Ya enviada (cache): ${job.job_title} (${job.id})`);
       }
+    } else {
+      logger.info(`⏭️ [SKIP] Fecha incorrecta: ${job.job_title} | Created: ${createdAt.toISOString()} | Today: ${today.toISOString()}`);
     }
   }
 
