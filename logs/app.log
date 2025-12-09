@@ -455,3 +455,39 @@
 [2025-11-17 15:33:37] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: l6wczoq[39m
 [2025-11-17 15:33:37] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
 [2025-11-17 15:33:37] [32minfo[39m: [32m🆔 Instance ID activo: l6wczoq[39m
+[2025-12-09 13:36:59] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: sc1uaf4[39m
+[2025-12-09 13:36:59] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 13:36:59] [32minfo[39m: [32m🆔 Instance ID activo: sc1uaf4[39m
+[2025-12-09 13:37:54] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: 8a17w1e[39m
+[2025-12-09 13:37:54] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 13:37:54] [32minfo[39m: [32m🆔 Instance ID activo: 8a17w1e[39m
+[2025-12-09 13:42:55] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: ys6oyfr[39m
+[2025-12-09 13:42:55] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 13:42:55] [32minfo[39m: [32m🆔 Instance ID activo: ys6oyfr[39m
+[2025-12-09 13:46:11] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 13:46:11] [31merror[39m: [31m❌ Error inicializando DB: getaddrinfo ENOTFOUND db.gxfxgdaqfmjjnfacizaw.supabase.co[39m
+[2025-12-09 13:54:49] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 13:54:50] [31merror[39m: [31m❌ Error inicializando DB: password authentication failed for user "postgres"[39m
+[2025-12-09 13:59:40] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 13:59:40] [31merror[39m: [31m❌ Error inicializando DB: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[2025-12-09 14:00:10] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:00:10] [31merror[39m: [31m❌ Error inicializando DB: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[2025-12-09 14:01:23] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:01:23] [31merror[39m: [31m❌ Error inicializando DB: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[2025-12-09 14:01:53] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:01:53] [31merror[39m: [31m❌ Error inicializando DB: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string[39m
+[2025-12-09 14:04:33] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:04:35] [31merror[39m: [31m❌ Error inicializando DB: password authentication failed for user "postgres"[39m
+[2025-12-09 14:07:02] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:07:04] [31merror[39m: [31m❌ Error inicializando DB: password authentication failed for user "postgres"[39m
+[2025-12-09 14:07:56] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:07:58] [31merror[39m: [31m❌ Error inicializando DB: password authentication failed for user "postgres"[39m
+[2025-12-09 14:09:18] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:09:18] [31merror[39m: [31m❌ Error inicializando DB: Tenant or user not found[39m
+[2025-12-09 14:09:32] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:09:32] [31merror[39m: [31m❌ Error inicializando DB: Tenant or user not found[39m
+[2025-12-09 14:10:05] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:10:05] [31merror[39m: [31m❌ Error inicializando DB: Tenant or user not found[39m
+[2025-12-09 14:11:47] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
+[2025-12-09 14:11:48] [32minfo[39m: [32m✅ Tabla 'jobs' verificada/creada.[39m
+[2025-12-09 14:11:48] [32minfo[39m: [32m✅ Tabla 'jobs_sent_cache' verificada/creada.[39m

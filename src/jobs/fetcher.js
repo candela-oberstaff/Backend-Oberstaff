@@ -1,4 +1,4 @@
-import { isSent } from "./cache.js";
+import { isSent, saveJobs } from "./cache.js";
 import axios from "axios";
 import logger from "../../logger.js";
 import dotenv from "dotenv";
