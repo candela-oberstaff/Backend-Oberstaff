@@ -32,14 +32,19 @@ export const fetchActiveJobs = async () => {
       job => String(job.status || "").toLowerCase() === "active"
     );
 
-    logger.info(`📦 ${activeJobs.length} vacantes activas obtenidas de la API.`);
+    // 🛡️ Deduplicar por ID para evitar que la misma vacante se procese dos veces
+    const uniqueActiveJobs = Array.from(
+      new Map(activeJobs.map(job => [job.id, job])).values()
+    );
+
+    logger.info(`📦 ${uniqueActiveJobs.length} vacantes activas obtenidas de la API.`);
 
 
 
     logger.info("💾 Guardando vacantes activas en la tabla jobs...");
     await saveJobs(activeJobs);
     logger.info("✅ Vacantes guardadas/actualizadas correctamente en jobs.");
-    
+
 
     return activeJobs;
   } catch (err) {

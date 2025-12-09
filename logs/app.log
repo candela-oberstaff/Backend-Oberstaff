@@ -491,3 +491,71 @@
 [2025-12-09 14:11:47] [32minfo[39m: [32m🛠️ Iniciando creación de tablas...[39m
 [2025-12-09 14:11:48] [32minfo[39m: [32m✅ Tabla 'jobs' verificada/creada.[39m
 [2025-12-09 14:11:48] [32minfo[39m: [32m✅ Tabla 'jobs_sent_cache' verificada/creada.[39m
+[2025-12-09 14:12:57] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: qqozafv[39m
+[2025-12-09 14:12:57] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 14:12:57] [32minfo[39m: [32m🆔 Instance ID activo: qqozafv[39m
+[2025-12-09 14:30:00] [32minfo[39m: [32m⏰ [CRON 30min | qqozafv] Iniciando verificación...[39m
+[2025-12-09 14:30:00] [32minfo[39m: [32m🔍 [qqozafv] Ejecutando sendNewJobsFlow()[39m
+[2025-12-09 14:30:00] [32minfo[39m: [32m🔍 Buscando vacantes nuevas del día...[39m
+[2025-12-09 14:30:00] [32minfo[39m: [32m🔗 Consultando API Intelliscreen...[39m
+[2025-12-09 14:30:06] [32minfo[39m: [32m📦 38 vacantes activas obtenidas de la API.[39m
+[2025-12-09 14:30:06] [32minfo[39m: [32m💾 Guardando vacantes activas en la tabla jobs...[39m
+[2025-12-09 14:30:08] [32minfo[39m: [32m✅ Vacantes guardadas/actualizadas correctamente en jobs.[39m
+[2025-12-09 14:30:08] [32minfo[39m: [32m📆 3 vacantes nuevas del día (según PostgreSQL).[39m
+[2025-12-09 14:30:09] [32minfo[39m: [32m📤 Enviando 3 vacantes...[39m
+[2025-12-09 14:30:43] [32minfo[39m: [32m📤 Telegram enviado: Auxiliar Administrativo con experiencia en corredurías de seguros[39m
+[2025-12-09 14:30:44] [32minfo[39m: [32m📤 Telegram enviado: Entrenador Personal Bilingüe[39m
+[2025-12-09 14:30:44] [32minfo[39m: [32m📤 Telegram enviado:  Especialista en Reclutamiento y Selección [39m
+[2025-12-09 14:30:46] [31merror[39m: [31m❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404[39m
+[2025-12-09 14:30:47] [31merror[39m: [31m❌ Error notificando workflow https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3: Request failed with status code 404[39m
+[2025-12-09 14:30:47] [32minfo[39m: [32m✅ Flujo completado correctamente.[39m
+[2025-12-09 14:30:47] [32minfo[39m: [32m✅ [qqozafv] Flujo finalizado (47137ms)[39m
+[2025-12-09 14:37:34] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: hzdwx1p[39m
+[2025-12-09 14:37:34] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 14:37:34] [32minfo[39m: [32m🆔 Instance ID activo: hzdwx1p[39m
+[2025-12-09 15:00:00] [32minfo[39m: [32m⏰ [CRON 30min | hzdwx1p] Iniciando verificación...[39m
+[2025-12-09 15:00:00] [32minfo[39m: [32m🔍 [hzdwx1p] Ejecutando sendNewJobsFlow()[39m
+[2025-12-09 15:00:00] [32minfo[39m: [32m🔍 Buscando vacantes nuevas del día...[39m
+[2025-12-09 15:00:00] [32minfo[39m: [32m🔗 Consultando API Intelliscreen...[39m
+[2025-12-09 15:00:05] [32minfo[39m: [32m📦 38 vacantes activas obtenidas de la API.[39m
+[2025-12-09 15:00:05] [32minfo[39m: [32m💾 Guardando vacantes activas en la tabla jobs...[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m✅ Vacantes guardadas/actualizadas correctamente en jobs.[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m⚠️ Ya enviada (cache): 746c0200-611b-49eb-a1e5-8ca6fedbb4d1[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m⚠️ Ya enviada (cache): de170ce2-cb37-4f4f-b6c9-f27c8f2e42ef[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m⚠️ Ya enviada (cache): 91de5582-0d1d-4001-9082-1b4de0f2ec59[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m📆 0 vacantes nuevas del día (según PostgreSQL).[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m📭 No hay vacantes nuevas para enviar.[39m
+[2025-12-09 15:00:06] [32minfo[39m: [32m✅ [hzdwx1p] Flujo finalizado (6829ms)[39m
+[2025-12-09 15:30:00] [32minfo[39m: [32m⏰ [CRON 30min | hzdwx1p] Iniciando verificación...[39m
+[2025-12-09 15:30:00] [32minfo[39m: [32m🔍 [hzdwx1p] Ejecutando sendNewJobsFlow()[39m
+[2025-12-09 15:30:00] [32minfo[39m: [32m🔍 Buscando vacantes nuevas del día...[39m
+[2025-12-09 15:30:00] [32minfo[39m: [32m🔗 Consultando API Intelliscreen...[39m
+[2025-12-09 15:30:03] [32minfo[39m: [32m📦 38 vacantes activas obtenidas de la API.[39m
+[2025-12-09 15:30:03] [32minfo[39m: [32m💾 Guardando vacantes activas en la tabla jobs...[39m
+[2025-12-09 15:30:05] [32minfo[39m: [32m✅ Vacantes guardadas/actualizadas correctamente en jobs.[39m
+[2025-12-09 15:30:05] [32minfo[39m: [32m⚠️ Ya enviada (cache): 746c0200-611b-49eb-a1e5-8ca6fedbb4d1[39m
+[2025-12-09 15:30:05] [32minfo[39m: [32m⚠️ Ya enviada (cache): de170ce2-cb37-4f4f-b6c9-f27c8f2e42ef[39m
+[2025-12-09 15:30:06] [32minfo[39m: [32m⚠️ Ya enviada (cache): 91de5582-0d1d-4001-9082-1b4de0f2ec59[39m
+[2025-12-09 15:30:06] [32minfo[39m: [32m📆 0 vacantes nuevas del día (según PostgreSQL).[39m
+[2025-12-09 15:30:06] [32minfo[39m: [32m📭 No hay vacantes nuevas para enviar.[39m
+[2025-12-09 15:30:06] [32minfo[39m: [32m✅ [hzdwx1p] Flujo finalizado (5895ms)[39m
+[2025-12-09 16:00:00] [32minfo[39m: [32m⏰ [CRON 30min | hzdwx1p] Iniciando verificación...[39m
+[2025-12-09 16:00:00] [32minfo[39m: [32m🔍 [hzdwx1p] Ejecutando sendNewJobsFlow()[39m
+[2025-12-09 16:00:00] [32minfo[39m: [32m🔍 Buscando vacantes nuevas del día...[39m
+[2025-12-09 16:00:00] [32minfo[39m: [32m🔗 Consultando API Intelliscreen...[39m
+[2025-12-09 16:00:05] [32minfo[39m: [32m📦 39 vacantes activas obtenidas de la API.[39m
+[2025-12-09 16:00:05] [32minfo[39m: [32m💾 Guardando vacantes activas en la tabla jobs...[39m
+[2025-12-09 16:00:06] [32minfo[39m: [32m✅ Vacantes guardadas/actualizadas correctamente en jobs.[39m
+[2025-12-09 16:00:07] [32minfo[39m: [32m⚠️ Ya enviada (cache): 746c0200-611b-49eb-a1e5-8ca6fedbb4d1[39m
+[2025-12-09 16:00:07] [32minfo[39m: [32m⚠️ Ya enviada (cache): de170ce2-cb37-4f4f-b6c9-f27c8f2e42ef[39m
+[2025-12-09 16:00:07] [32minfo[39m: [32m⚠️ Ya enviada (cache): 91de5582-0d1d-4001-9082-1b4de0f2ec59[39m
+[2025-12-09 16:00:07] [32minfo[39m: [32m📆 1 vacantes nuevas del día (según PostgreSQL).[39m
+[2025-12-09 16:00:07] [32minfo[39m: [32m📤 Enviando 1 vacantes...[39m
+[2025-12-09 16:00:20] [32minfo[39m: [32m📤 Telegram enviado: Docente de Español[39m
+[2025-12-09 16:00:22] [31merror[39m: [31m❌ Error notificando workflow https://hooks.zapier.com/hooks/catch/12433184/2g3f0f4/: Request failed with status code 404[39m
+[2025-12-09 16:00:23] [31merror[39m: [31m❌ Error notificando workflow https://n8n.obertrack.com/webhook/76df3b99-3638-434c-9dab-408addb895c3: Request failed with status code 404[39m
+[2025-12-09 16:00:23] [32minfo[39m: [32m✅ Flujo completado correctamente.[39m
+[2025-12-09 16:00:23] [32minfo[39m: [32m✅ [hzdwx1p] Flujo finalizado (23015ms)[39m
+[2025-12-09 16:05:26] [32minfo[39m: [32m🚀 Backend iniciado | Instance ID: e60zg3d[39m
+[2025-12-09 16:05:26] [32minfo[39m: [32m🌐 Servidor corriendo en http://localhost:3001[39m
+[2025-12-09 16:05:26] [32minfo[39m: [32m🆔 Instance ID activo: e60zg3d[39m
