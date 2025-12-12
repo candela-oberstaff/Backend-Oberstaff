@@ -6,7 +6,7 @@ dotenv.config();
 export async function sendJobsToWhatsApp(data) {
   const WAHA_URL = process.env.WAHA_URL;
   const CHAT_ID = process.env.WHATSAPP_CHAT_ID;
-  const API_KEY = process.env.WAHA_TOKEN;
+  const API_KEY = process.env.WAHA_API_KEY;
 
   if (!data.positions || data.positions.length === 0) {
     console.log("No hay posiciones para enviar.");
