@@ -1,0 +1,17 @@
+[dotenv@17.2.3] injecting env (16) from .env -- tip: ⚙️  override existing env vars with { override: true }
+Checking WAHA status at https://waha.obertrack.com...
+Sessions: [
+  {
+    "name": "default",
+    "status": "WORKING",
+    "config": null,
+    "me": {
+      "id": "34912158474@c.us",
+      "pushName": "Oberstaff"
+    },
+    "presence": "offline",
+    "timestamps": {
+      "activity": 1767960981215
+    }
+  }
+]

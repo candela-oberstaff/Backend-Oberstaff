@@ -18,43 +18,4 @@ export const markAsSent = async (jobs) => {
   );
 };
 
-// **********************************************
-// * NUEVA FUNCIÓN: GUARDAR VACANTES EN LA TABLA JOBS
-// **********************************************
-export const saveJobs = async (jobs) => {
-  if (!jobs.length) return;
-
-  // Creamos el query para insertar múltiples registros.
-  const queryParts = jobs.map((job, index) => {
-    // Definimos el índice inicial para los parámetros ($1, $2, $3, ...)
-    const baseIndex = index * 7;
-    return `($${baseIndex + 1}, $${baseIndex + 2}, $${baseIndex + 3}, $${baseIndex + 4}, $${baseIndex + 5}, $${baseIndex + 6}, $${baseIndex + 7})`;
-  }).join(", ");
-
-  // Aplanamos todos los valores para el array de parámetros
-  const values = jobs.flatMap(job => [
-    job.id,
-    job.name, // El campo de Intelliscreen se llama 'name', lo insertamos en 'job_title'
-    job.status,
-    job.created_at,
-    job.total_candidates,
-    JSON.stringify(job.tests), // Aseguramos que el JSON se inserte como texto para jsonb
-    job.invite_url // El campo de Intelliscreen se llama 'invite_url', lo insertamos en 'invitation_link'
-  ]);
-
-  const insertQuery = `
-    INSERT INTO jobs (
-        id,
-        job_title,
-        status,
-        created_at,
-        total_candidates,
-        tests,
-        invitation_link
-    )
-    VALUES ${queryParts}
-    ON CONFLICT (id) DO NOTHING;
-  `;
-
-  await pool.query(insertQuery, values);
-};
+// saveJobs was removed since it's no longer syncing from Intelliscreen

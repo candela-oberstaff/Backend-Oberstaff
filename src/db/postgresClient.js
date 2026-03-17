@@ -18,11 +18,23 @@ export const pool = new Pool({
 
 // Probar conexión inicial
 pool.connect()
-  .then((client) => {
-    console.log("✅ Conectado a Supabase PostgreSQL");
-    client.release();
+  .then(async (client) => {
+    console.log("✅ Conectado al nuevo PostgreSQL");
+    try {
+      await client.query(`
+        CREATE TABLE IF NOT EXISTS jobs_sent_cache (
+          job_id VARCHAR(255) PRIMARY KEY,
+          sent_at TIMESTAMP DEFAULT NOW()
+        );
+      `);
+      console.log("✅ Tabla jobs_sent_cache verificada/creada");
+    } catch (e) {
+      console.error("❌ Error verificando/creando jobs_sent_cache:", e.message);
+    } finally {
+      client.release();
+    }
   })
-  .catch((err) => console.error("❌ Error conectando a Supabase:", err.message));
+  .catch((err) => console.error("❌ Error conectando a PostgreSQL:", err.message));
 
 // Escuchar errores globales del pool (para que no crashee el server)
 pool.on("error", (err) => {
